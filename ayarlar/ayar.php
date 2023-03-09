@@ -21,6 +21,7 @@ if($ayarSayisi > 0){
     $siteLogosu         = $ayarlar["siteLogosu"];
     $siteEmailAdresi    = $ayarlar["siteEmailAdresi"];
     $siteEmailSifresi   = $ayarlar["siteEmailSifresi"];
+    $siteEmailHostAdresi= $ayarlar["siteEmailHostAdresi"];
     $facebook           = $ayarlar["facebook"];
     $twitter            = $ayarlar["twitter"];
     $linkedin           = $ayarlar["linkedin"];

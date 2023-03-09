@@ -27,60 +27,61 @@
 
                     foreach ($bankaKayitlari as $banka) {
                     ?>
-                            <td width="340">
-                                <table align="center" border="0" cellpadding="0" cellspacing="0" style="border: 1px solid #CCC;">
+                            <td width="348">
+                                <table align="center" border="0" cellpadding="0" cellspacing="0" style="border: 1px solid #CCC; margin-bottom: 10px;">
                                     <tr height="40">
                                         <td colspan="4" align="center"><img src="resimler/Banka20x20.png" alt="bankaIcon"></td>
                                     </tr>
                                     <tr height="25">
                                         <td width="5">&nbsp;</td>
-                                        <td width="80">Banka Adı</td>
-                                        <td width="10">:</td>
-                                        <td width="245">Ziraat Bankası</td>
+                                        <td width="80"><b>Banka Adı</b></td>
+                                        <td width="10"><b>:</b></td>
+                                        <td width="253"><?php echo donusumleriGeriDondur($banka["bankaAdi"]); ?></td>
                                     </tr>
                                     <tr height="25">
                                         <td width="5">&nbsp;</td>
-                                        <td>Konum</td>
-                                        <td>:</td>
-                                        <td>İstanbul / Türkiye</td>
+                                        <td><b>Konum</b></td>
+                                        <td><b>:</b></td>
+                                        <td><?php echo donusumleriGeriDondur($banka["konumSehir"]); ?> / <?php echo donusumleriGeriDondur($banka["konumUlke"]); ?></td>
                                     </tr>
                                     <tr height="25">
                                         <td width="5">&nbsp;</td>
-                                        <td>Şube</td>
-                                        <td>:</td>
-                                        <td>Fındıkzade / 1234</td>
+                                        <td><b>Şube</b></td>
+                                        <td><b>:</b></td>
+                                        <td><?php echo donusumleriGeriDondur($banka["subeAdi"]); ?> / <?php echo donusumleriGeriDondur($banka["subeKodu"]); ?></td>
                                     </tr>
                                     <tr height="25">
                                         <td width="5">&nbsp;</td>
-                                        <td>Birim</td>
-                                        <td>:</td>
-                                        <td>Türk Lirası</td>
+                                        <td><b>Birim</b></td>
+                                        <td><b>:</b></td>
+                                        <td><?php echo donusumleriGeriDondur($banka["paraBirimi"]); ?></td>
                                     </tr>
                                     <tr height="25">
                                         <td width="5">&nbsp;</td>
-                                        <td>Hesap Adı</td>
-                                        <td>:</td>
-                                        <td>Selim Tekin</td>
+                                        <td><b>Hesap Adı</b></td>
+                                        <td><b>:</b></td>
+                                        <td><?php echo donusumleriGeriDondur($banka["hesapSahibi"]); ?></td>
                                     </tr>
                                     <tr height="25">
                                         <td width="5">&nbsp;</td>
-                                        <td>Hesap No</td>
-                                        <td>:</td>
-                                        <td>1234567890</td>
+                                        <td><b>Hesap No</b></td>
+                                        <td><b>:</b></td>
+                                        <td><?php echo donusumleriGeriDondur($banka["hesapNumarasi"]); ?></td>
                                     </tr>
                                     <tr height="25">
                                         <td width="5">&nbsp;</td>
-                                        <td>IBAN No</td>
-                                        <td>:</td>
-                                        <td>TR000000000000000000000000</td>
+                                        <td><b>IBAN No</b></td>
+                                        <td><b>:</b></td>
+                                        <td><?php echo IBANBicimlendir(donusumleriGeriDondur($banka["ibanNumarasi"])); ?></td>
                                     </tr>
                                 </table>
                             </td>
-
-                            <td width="20">&nbsp;</td>
-                        
-                        <?php
-
+                            <?php
+                            if($donguSayisi < $sutunAdetSayisi){
+                            ?>
+                                <td width="10">&nbsp;</td>
+                        <?php 
+                            }
                         $donguSayisi++;
                         if($donguSayisi > $sutunAdetSayisi){
                             echo "<tr></tr>";

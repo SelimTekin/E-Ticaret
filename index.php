@@ -1,4 +1,5 @@
 <?php
+ob_start();
 require_once("ayarlar/ayar.php");
 require_once("ayarlar/fonksiyonlar.php");
 require_once("ayarlar/siteSayfalari.php");
@@ -133,9 +134,9 @@ else{
                         </td>
                     </tr>
                     <tr height="30">
-                        <td class="altMenu">&nbsp;<a href="xxxxx">Havale Bildirim Formu</a></td>
+                        <td class="altMenu">&nbsp;<a href="index.php?sayfaKodu=9">Havale Bildirim Formu</a></td>
                         <td>&nbsp;</td>
-                        <td class="altMenu"><a href="xxxxx">Sık Sorulan Sorular</a></td>
+                        <td class="altMenu"><a href="index.php?sayfaKodu=21">Sık Sorulan Sorular</a></td>
                         <td>&nbsp;</td>
                         <td class="altMenu"><a href="index.php?sayfaKodu=4">Gizlilik Sözleşmesi</a></td>
                         <td>&nbsp;</td>
@@ -149,7 +150,7 @@ else{
                         </td>
                     </tr>
                     <tr height="30">
-                        <td class="altMenu">&nbsp;<a href="xxxxx">Kargo Nerede?</a></td>
+                        <td class="altMenu">&nbsp;<a href="index.php?sayfaKodu=14">Kargo Nerede?</a></td>
                         <td>&nbsp;</td>
                         <td></td>
                         <td>&nbsp;</td>
@@ -165,7 +166,7 @@ else{
                         </td>
                     </tr>
                     <tr height="30">
-                        <td class="altMenu">&nbsp;<a href="xxxxx">İletişim</a></td>
+                        <td class="altMenu">&nbsp;<a href="index.php?sayfaKodu=16">İletişim</a></td>
                         <td>&nbsp;</td>
                         <td></td>
                         <td>&nbsp;</td>
@@ -234,4 +235,5 @@ else{
 </html>
 <?php
 $db = null;
+ob_end_flush();
 ?>

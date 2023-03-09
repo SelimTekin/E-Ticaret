@@ -48,3 +48,100 @@ html, body{
     font-weight: normal;
     text-decoration: none;
 }
+
+.sonucSayfalari a:link, .sonucSayfalari a:hover, .sonucSayfalari a:active, .sonucSayfalari a:visited{
+    font-family: "Open Sans", Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    color: #646464;
+    line-height: 1.5;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
+    text-decoration: none;
+}
+
+.inputAlanlari{
+    width: 95%;
+    height: 30px;
+    padding: 0px 10px;
+}
+
+.selectAlanlari{
+    width: 100%;
+    height: 40px;
+    padding: 0px 10px;
+}
+
+.textAreaAlanlari{
+    width: 95%;
+    height: 100px;
+    padding: 10px 10px;
+}
+
+.maviButon{
+    height: 30px;
+    border: 1px solid #0400ff;
+    background: #0400e4;
+    padding: 5px 30px;
+    color: white;
+}
+.maviButon:hover{
+    height: 30px;
+    border: 1px solid #0400e4;
+    background: #0400ff;
+    padding: 5px 30px;
+    color: black;
+    cursor: pointer;
+}
+
+.kargoTakipInputu{
+    width: 75%;
+    height: 32px;
+    padding: 0px 10px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.kargoTakipButonu{
+    height: 30px;
+    border: 1px solid #CCC;
+    background: #FF9900;
+    padding: 5px 30px;
+    color: white;
+}
+.kargoTakipButonu:hover{
+    height: 30px;
+    border: 1px solid #000;
+    background: #CCC;
+    padding: 5px 30px;
+    color: black;
+    cursor: pointer;
+}
+
+.sorununBaslikAlani{
+    width: 100%;
+    height: 30px;
+    padding-top: 10px;
+    font-size: 14px;
+    color: #000;
+    line-height: 1.5;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: bold;
+    text-decoration: none;
+    cursor: pointer;
+    border-bottom: 1px dashed #CCC;
+}
+
+.sorununBaslikAlani:hover{
+    background: #F1F1F1;
+    cursor: pointer;
+}
+
+.sorununCevapAlani{
+    width: 100%;
+    margin-top: 10px;
+    font-size: 14px;
+    line-height: 1.5;
+}

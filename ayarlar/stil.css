@@ -71,6 +71,17 @@ html, body{
     text-decoration: none;
 }
 
+.sifremiUnuttumFormu a:link, .sifremiUnuttumFormu a:hover, .sifremiUnuttumFormu a:active, .sifremiUnuttumFormu a:visited{
+    font-family: "Open Sans", Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    color: #646464;
+    line-height: 1.5;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
+    text-decoration: none;
+}
+
 .inputAlanlari{
     width: 95%;
     height: 30px;

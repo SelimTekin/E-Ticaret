@@ -55,13 +55,13 @@ if ($ayarSayisi > 0) {
 
 
 if (isset($_SESSION["kullanici"])) {
-    $kullaniciSorgusu    = $db->prepare("SELECT * FROM uyeler WHERE emailAdresi = " . $_SESSION["kullanici"] . " LIMIT 1");
-    $kullaniciSorgusu->execute();
+    $kullaniciSorgusu    = $db->prepare("SELECT * FROM uyeler WHERE emailAdresi = ? LIMIT 1");
+    $kullaniciSorgusu->execute([$_SESSION["kullanici"]]);
     $kullaniciSayisi     = $kullaniciSorgusu->rowCount();
-    $kullanicilar        = $kullaniciSorgusu->fetch(PDO::FETCH_ASSOC);
+    $kullanici        = $kullaniciSorgusu->fetch(PDO::FETCH_ASSOC);
 
     if ($kullaniciSayisi > 0) {
-        $kullaniciId     = $kullanici["kullai$kullaniciId"];
+        $kullaniciId     = $kullanici["id"];
         $emailAdresi     = $kullanici["emailAdresi"];
         $sifre           = $kullanici["sifre"];
         $isimSoyisim     = $kullanici["isimSoyisim"];

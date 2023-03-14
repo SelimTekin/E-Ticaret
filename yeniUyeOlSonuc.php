@@ -93,57 +93,34 @@ if( ($gelenIsimSoyisim!="") and ($gelenEmailAdresi!="") and ($gelenTelefonNumara
 
                     $mailGonder = new PHPMailer(true);
 
-                    // try {
-                    //     //Server settings
-                    //     $mailGonder->SMTPDebug  = 0;                      //Enable verbose debug output
-                    //     $mailGonder->isSMTP();                                            //Send using SMTP
-                    //     $mailGonder->Host       = donusumleriGeriDondur($siteEmailHostAdresi);                     //Set the SMTP server to send through
-                    //     $mailGonder->SMTPAuth   = true;                                   //Enable SMTP authentication
-                    //     $mailGonder->CharSet    = "UTF-8";                                   //Enable SMTP authentication
-                    //     $mailGonder->Username   = donusumleriGeriDondur($siteEmailAdresi);                  //SMTP username
-                    //     $mailGonder->Password   = donusumleriGeriDondur($siteEmailSifresi);                               //SMTP password
-                    //     $mailGonder->SMTPSecure = 'tls';           //Enable implicit TLS encryption
-                    //     $mailGonder->Port       = 587;                                    //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
-                    //     $mailGonder->SMTPOptions = array(
-                    //         "ssl" => array(
-                    //             "verify_peer"       => false,
-                    //             "verify_peer_name"  => false,
-                    //             "allow_self_signed" => true
-                    //         )
-                    //     );
-                    //     //Recipients
-                    //     $mailGonder->setFrom(donusumleriGeriDondur($siteEmailAdresi), donusumleriGeriDondur($siteAdi));
-                    //     $mailGonder->addAddress(donusumleriGeriDondur($gelenEmailAdresi), donusumleriGeriDondur($gelenIsimSoyisim));     //Add a recipient
-                    //     $mailGonder->addReplyTo($siteEmailAdresi, $siteAdi);
-
-                    //     //Content
-                    //     $mailGonder->isHTML(true);                                  //Set email format to HTML
-                    //     $mailGonder->Subject = donusumleriGeriDondur($siteAdi) . ' Yeni Üyelik Aktivasyonu';
-                    //     $mailGonder->msgHTML($mailIcerigiHazirla);
-                    //     $mailGonder->AltBody = 'This is the body in plain text for non-HTML mail clients';
-
-                    //     $mailGonder->send();
-
-                    //     header("Location:index.php?sayfaKodu=24");
-                    //     exit();
-                    // }
                     try {
-                        $mailGonder->SMTPDebug  = 2;
-                        $mailGonder->isSMTP();
-                        $mailGonder->Host       = "ssl://smtp.gmail.com";
-                        $mailGonder->SMTPAuth   = true;  
-                        $mailGonder->Username   = "tekinselim.57.57@gmail.com"; 
-                        $mailGonder->Password   = "TKn.57.79!";
-                        $mailGonder->CharSet    = "UTF-8";
-                        $mailGonder->SMTPSecure = 'tls';
-                        $mailGonder->Port       = 465;
+                        //Server settings
+                        $mailGonder->SMTPDebug  = 0;                      //Enable verbose debug output
+                        $mailGonder->isSMTP();                                            //Send using SMTP
+                        $mailGonder->Host       = donusumleriGeriDondur($siteEmailHostAdresi);                     //Set the SMTP server to send through
+                        $mailGonder->SMTPAuth   = true;                                   //Enable SMTP authentication
+                        $mailGonder->CharSet    = "UTF-8";                                   //Enable SMTP authentication
+                        $mailGonder->Username   = donusumleriGeriDondur($siteEmailAdresi);                  //SMTP username
+                        $mailGonder->Password   = donusumleriGeriDondur($siteEmailSifresi);                               //SMTP password
+                        $mailGonder->SMTPSecure = 'tls';           //Enable implicit TLS encryption
+                        $mailGonder->Port       = 587;                                    //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
+                        $mailGonder->SMTPOptions = array(
+                            "ssl" => array(
+                                "verify_peer"       => false,
+                                "verify_peer_name"  => false,
+                                "allow_self_signed" => true
+                            )
+                        );
+                        //Recipients
+                        $mailGonder->setFrom(donusumleriGeriDondur($siteEmailAdresi), donusumleriGeriDondur($siteAdi));
+                        $mailGonder->addAddress(donusumleriGeriDondur($gelenEmailAdresi), donusumleriGeriDondur($gelenIsimSoyisim));     //Add a recipient
+                        $mailGonder->addReplyTo($siteEmailAdresi, $siteAdi);
 
-                        $mailGonder->setFrom("tekinselim.57.57@gmail.com", "Selim");
-                        $mailGonder->addAddress("tekinselim.57.57@gmail.com", ""); 
-
-                        $mailGonder->isHTML(true);
+                        //Content
+                        $mailGonder->isHTML(true);                                  //Set email format to HTML
                         $mailGonder->Subject = donusumleriGeriDondur($siteAdi) . ' Yeni Üyelik Aktivasyonu';
                         $mailGonder->msgHTML($mailIcerigiHazirla);
+                        $mailGonder->AltBody = 'This is the body in plain text for non-HTML mail clients';
 
                         $mailGonder->send();
 
@@ -151,7 +128,6 @@ if( ($gelenIsimSoyisim!="") and ($gelenEmailAdresi!="") and ($gelenTelefonNumara
                         exit();
                     }
                     catch (Exception $e) {
-                        echo $e->getMessage();die();
                         header("Location:index.php?sayfaKodu=25");
                         exit();
                     }

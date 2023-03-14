@@ -31,11 +31,24 @@ $sayfa[27] = "yeniUyeOlSonucTekrarlanan.php";
 $sayfa[28] = "yeniUyeOlSonucUyusmayanSifre.php";
 $sayfa[29] = "yeniUyeOlSonucOnaysizSozlesme.php";
 $sayfa[30] = "yeniUeyOlSonucAktivasyonTamam.php";
-$sayfa[32] = "uyeGiris.php";
-$sayfa[31] = "uyeGirisSonuc.php";
+$sayfa[31] = "uyeGiris.php";
+$sayfa[32] = "uyeGirisSonuc.php";
 $sayfa[33] = "uyeGirisSonucHata.php";
 $sayfa[34] = "uyeGirisSonucYanlisBilgi.php";
 $sayfa[35] = "uyeGirisSonucEksikAlan.php";
-$sayfa[35] = "uyeGirisSonucAktivasyonsuz.php";
+$sayfa[36] = "uyeGirisSonucAktivasyonsuz.php";
+$sayfa[37] = "sifremiUnuttum.php";
+$sayfa[38] = "sifremiUnuttumSonuc.php";
+$sayfa[39] = "sifremiUnuttumSonucTamam.php";
+$sayfa[40] = "sifremiUnuttumSonucHata.php";
+$sayfa[41] = "sifremiUnuttumSonucYanlisBilgi.php";
+$sayfa[42] = "sifremiUnuttumSonucEksikAlan.php";
+$sayfa[43] = "yeniSifreOlustur.php";
+$sayfa[45] = "yeniSifreOlusturSonuc.php";
+$sayfa[44] = "yeniSifreOlusturSonucTamam.php";
+$sayfa[46] = "yeniSifreOlusturSonucHata.php";
+$sayfa[47] = "yeniSifreOlusturUyusmayanSifre.php";
+$sayfa[48] = "yeniSifreOlusturSonucEksikAlan.php";
+$sayfa[49] = "hesabimUyelikBilgilerim.php";
 
 ?>

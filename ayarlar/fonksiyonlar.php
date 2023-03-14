@@ -60,4 +60,15 @@ function IBANBicimlendir($deger){
     return $sonuc;
 }
 
+function aktivasyonKoduUret(){
+    $ilkBesli      = rand(10000, 99999);
+    $ikinciBesli   = rand(10000, 99999);
+    $ucuncuBesli   = rand(10000, 99999);
+    $dorduncuBesli = rand(10000, 99999);
+    $kod           = $ilkBesli . "-" . $ikinciBesli . "-" . $ucuncuBesli . "-" . $dorduncuBesli;
+    $sonuc         = $kod;
+    
+    return $sonuc;
+}
+
 ?>

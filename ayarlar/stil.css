@@ -60,6 +60,17 @@ html, body{
     text-decoration: none;
 }
 
+.uyelikFormu a:link, .uyelikFormu a:hover, .uyelikFormu a:active, .uyelikFormu a:visited{
+    font-family: "Open Sans", Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    color: #646464;
+    line-height: 1.5;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: bold;
+    text-decoration: none;
+}
+
 .inputAlanlari{
     width: 95%;
     height: 30px;

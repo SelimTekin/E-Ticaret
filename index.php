@@ -1,5 +1,8 @@
 <?php
-ob_start();
+session_start();
+ob_start(); // çıktı tamponları (Birtakım değerleri alıp depolayacağız. Bunları yeri geldiğinde kullanacağız. ob_start() bu işe yarar.)
+// ob_end_flush() çıktı tamponlarını hem boşaltrı hem kapatır. (Sayfanın altında)
+// ob_end_clean() silip kapatır.
 require_once("ayarlar/ayar.php");
 require_once("ayarlar/fonksiyonlar.php");
 require_once("ayarlar/siteSayfalari.php");
@@ -44,7 +47,7 @@ else{
                         <td width="20"><a href="xxxxx"><img src="resimler/KullaniciBeyaz16x16.png" alt="sepet" border="0" style="margin-top: 5px;"></a></td>
                         <td width="70" class="maviAlanMenusu"><a href="xxxxx">Giriş Yap</a></td>
                         <td width="20"><a href="xxxxx"><img src="resimler/KullaniciEkleBeyaz16x16.png" alt="sepet" border="0" style="margin-top: 5px;"></a></td>
-                        <td width="85" class="maviAlanMenusu"><a href="xxxxx">Yeni Üye Ol</a></td>
+                        <td width="85" class="maviAlanMenusu"><a href="index.php?sayfaKodu=22">Yeni Üye Ol</a></td>
                         <td width="20"><a href="xxxxx"><img src="resimler/SepetBeyaz16x16.png" alt="sepet" border="0" style="margin-top: 5px;"></a></td>
                         <td width="103" class="maviAlanMenusu"><a href="xxxxx">Alışveriş Sepeti</a></td>
                     </tr>
@@ -120,7 +123,7 @@ else{
                     <tr height="30">
                         <td class="altMenu">&nbsp;<a href="index.php?sayfaKodu=8">Banka Hesaplarımız</a></td>
                         <td>&nbsp;</td>
-                        <td class="altMenu"><a href="xxxxx">Yeni Üye Ol</a></td>
+                        <td class="altMenu"><a href="index.php?sayfaKodu=22">Yeni Üye Ol</a></td>
                         <td>&nbsp;</td>
                         <td class="altMenu"><a href="index.php?sayfaKodu=3">Kullanım Koşulları</a></td>
                         <td>&nbsp;</td>
@@ -235,5 +238,5 @@ else{
 </html>
 <?php
 $db = null;
-ob_end_flush();
+ob_end_flush(); // Çıktı tamponlarını boşaltıp kapattık
 ?>

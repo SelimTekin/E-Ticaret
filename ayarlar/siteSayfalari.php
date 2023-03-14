@@ -26,7 +26,16 @@ $sayfa[22] = "yeniUyeOl.php";
 $sayfa[23] = "yeniUyeOlSonuc.php";
 $sayfa[24] = "yeniUyeOlSonucTamam.php";
 $sayfa[25] = "yeniUyeOlSonucHata.php";
-$sayfa[26] = "yeniUyeOlEkisikAlan.php";
-$sayfa[27] = "yeniUyeOlTekrarlanan.php";
+$sayfa[26] = "yeniUyeOlSonucEksikAlan.php";
+$sayfa[27] = "yeniUyeOlSonucTekrarlanan.php";
+$sayfa[28] = "yeniUyeOlSonucUyusmayanSifre.php";
+$sayfa[29] = "yeniUyeOlSonucOnaysizSozlesme.php";
+$sayfa[30] = "yeniUeyOlSonucAktivasyonTamam.php";
+$sayfa[32] = "uyeGiris.php";
+$sayfa[31] = "uyeGirisSonuc.php";
+$sayfa[33] = "uyeGirisSonucHata.php";
+$sayfa[34] = "uyeGirisSonucYanlisBilgi.php";
+$sayfa[35] = "uyeGirisSonucEksikAlan.php";
+$sayfa[35] = "uyeGirisSonucAktivasyonsuz.php";
 
 ?>

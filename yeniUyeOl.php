@@ -1,65 +1,66 @@
 <table width="1065" align="center" border="0" cellpadding="0" cellspacing="0">
     <tr>
         <td width="500"  valign="top">
-            <form action="index.php?sayfaKodu=10" method="post">
+            <form action="index.php?sayfaKodu=23" method="post">
                 <table width="500" align="center" border="0" cellpadding="0" cellspacing="0">
                     <tr height="40">
-                        <td style="color: #FF9900;"><h3>Havale Bildirim Formu</h3></td>
+                        <td colspan="2" style="color: #FF9900;"><h3>Hesap Oluştur</h3></td>
                     </tr>
                     <tr height="40">
-                        <td valign="30" style="border-bottom: 1px dashed #CCC;">Tamamlanmış Olan Ödeme İşleminizi Aşağıdaki Formdan İletiniz.</td>
+                        <td colspan="2" valign="30" style="border-bottom: 1px dashed #CCC;">Yeni misin ? Aşağıdan Hesap Oluşturabilirsin.</td>
                     </tr>
 
                     <tr height="30">
-                        <td valign="bottom" align="left">İsim Soyisim (*)</td>
+                        <td colspan="2" valign="bottom" align="left">E-Mail Adresi (*)</td>
                     </tr>
                     <tr height="30">
-                        <td valign="top" align="left"><input type="text" name="isimSoyisim" class="inputAlanlari"></td>
-                    </tr>
-
-                    <tr height="30">
-                        <td valign="bottom" align="left">E-Mail Adresi (*)</td>
-                    </tr>
-                    <tr height="30">
-                        <td valign="top" align="left"><input type="mail" name="emailAdresi" class="inputAlanlari"></td>
+                        <td colspan="2" valign="top" align="left"><input type="mail" name="emailAdresi" class="inputAlanlari"></td>
                     </tr>
 
                     <tr height="30">
-                        <td valign="bottom" align="left">Telefon Numarası (*)</td>
+                        <td colspan="2" valign="bottom" align="left">Şifre (*)</td>
                     </tr>
                     <tr height="30">
-                        <td valign="top" align="left"><input type="text" name="telefonNumarasi" class="inputAlanlari" maxlength="11"></td>
-                    </tr>
-
-                    <tr height="30">
-                        <td valign="bottom" align="left">Ödeme Yapılan Banka (*)</td>
-                    </tr>
-                    <tr height="30">
-                        <td valign="top" align="left">
-                            <select name="bankaSecimi" class="selectAlanlari">
-                                <?php
-                                $bankalarSorgusu = $db->prepare("SELECT * FROM bankahesaplarimiz ORDER BY bankaAdi ASC");
-                                $bankalarSorgusu->execute();
-                                $bankaSayisi     = $bankalarSorgusu->rowCount();
-                                $bankalar        = $bankalarSorgusu->fetchAll(PDO::FETCH_ASSOC);
-
-                                foreach($bankalar as $banka){
-                                ?>
-                                <option value="<?php echo $banka["id"]; ?>"><?php echo donusumleriGeriDondur($banka["bankaAdi"]); ?></option>
-                                <?php } ?>
-                            </select>
-                        </td>
+                        <td colspan="2" valign="top" align="left"><input type="password" name="sifre" class="inputAlanlari"></td>
                     </tr>
 
                     <tr height="30">
-                        <td valign="bottom" align="left">Açıklama</td>
+                        <td colspan="2" valign="bottom" align="left">Şifre Tekrar (*)</td>
                     </tr>
                     <tr height="30">
-                        <td valign="top" align="left"><textarea name="aciklama" cols="30" rows="10" class="textAreaAlanlari"></textarea></td>
+                        <td colspan="2" valign="top" align="left"><input type="password" name="sifreTekrar" class="inputAlanlari"></td>
+                    </tr>
+
+                    <tr height="30">
+                        <td colspan="2" valign="bottom" align="left">İsim Soyisim (*)</td>
+                    </tr>
+                    <tr height="30">
+                        <td colspan="2" valign="top" align="left"><input type="text" name="isimSoyisim" class="inputAlanlari"></td>
+                    </tr>
+
+                    <tr height="30">
+                        <td colspan="2" valign="bottom" align="left">Telefon Numarası (*)</td>
+                    </tr>
+                    <tr height="30">
+                        <td colspan="2" valign="top" align="left"><input type="text" name="telefonNumarasi" class="inputAlanlari" maxlength="11"></td>
+                    </tr>
+
+                    <tr height="30">
+                        <td colspan="2" valign="bottom" align="left">Cinsiyet (*)</td>
+                    </tr>
+                    <tr height="30">
+                        <td colspan="2" valign="top" align="left"><select name="cinsiyet" id="cinsiyet" class="selectAlanlari">
+                            <option value="erkek">Erkek</option>
+                            <option value="kadin">Kadın</option>
+                        </select></td>
                     </tr>
 
                     <tr height="40">
-                        <td align="center"><input type="submit" value="Bildirimi Gönder" class="maviButon"></td>
+                        <td align="left" width="25"><input type="checkbox" name="sozlesmeOnay" value="1"></td>
+                        <td align="left" width="475" class="uyelikFormu"><a href="index.php?sayfaKodu=2">Üyelik Sözleşmesi</a>'ni Okudum ve Onaylıyorum.</td>
+                    </tr>
+                    <tr height="40">
+                        <td colspan="2" align="center"><input type="submit" value="Üye Ol" class="maviButon"></td>
                     </tr>
 
                 </table>
@@ -71,60 +72,30 @@
         <td width="545" valign="top">
             <table width="545" align="center" border="0" cellpadding="0" cellspacing="0">
                 <tr height="40">
-                    <td colspan="2" style="color: #FF9900;"><h3>İşleyiş</h3></td>
+                    <td colspan="2" style="color: #FF9900;"><h3>Neden mi S-Ticaret ?</h3></td>
                 </tr>
                 <tr height="40">
-                    <td colspan="2" valign="30" style="border-bottom: 1px dashed #CCC;">Havale / EFT İşlemlerinin Kontrolü.</td>
+                    <td colspan="2" valign="30" style="border-bottom: 1px dashed #CCC;">Birçok Nedeni Var!</td>
                 </tr>
                 <tr>
                     <td colspan="2" style="font-size: 5px;">&nbsp;</td>
                 </tr>
                 <tr height="30">
-                    <td align="left" width="30"><img src="resimler/Banka20x20.png" alt="bankaIcon" border="0" style="margin-top: 3px;"></td>
-                    <td align="left"><b>Havale / EFT İşlemi</b></td>
+                    <td align="left" width="30"><img src="resimler/AdamSiyah20x20.png" alt="bankaIcon" border="0" style="margin-top: 3px;"></td>
+                    <td align="left"><b>Güvenilir</b></td>
                 </tr>
                 <tr height="30">
-                    <td colspan="2" align="left">Müşteri tarafından öncelikle banka hesaplarımız sayfasında bulunan herhangi bir hesaba ödeme işlemi gerçekleştirilir.</td>
+                    <td colspan="2" align="left">Güvenilir hizmet sunmaktadır.</td>
                 </tr>
                 <tr>
                     <td colspan="2">&nbsp;</td>
                 </tr>
                 <tr height="30">
-                    <td align="left" width="30"><img src="resimler/DokumanKirmiziKalemli20x20.png" alt="bankaIcon" border="0" style="margin-top: 3px;"></td>
-                    <td align="left"><b>Bildirim İşlemi</b></td>
+                    <td align="left" width="30"><img src="resimler/RozetYesilSiyah20x20.png" alt="bankaIcon" border="0" style="margin-top: 3px;"></td>
+                    <td align="left"><b>Kaliteli</b></td>
                 </tr>
                 <tr height="30">
-                    <td colspan="2" align="left">Ödeme işlemi tamamlandıktan sonra "Havale Bildirim Formu" sayfasından müşteri yapmış olduğu ödeme için bildirim formunu doldurarak online olarak gönderir.</td>
-                </tr>
-                <tr>
-                    <td colspan="2">&nbsp;</td>
-                </tr>
-                <tr height="30">
-                    <td align="left" width="30"><img src="resimler/CarklarSiyah20x20.png" alt="bankaIcon" border="0" style="margin-top: 3px;"></td>
-                    <td align="left"><b>Kontroller</b></td>
-                </tr>
-                <tr height="30">
-                    <td colspan="2" align="left">"Havale Bildirim Formu"'nuz tarafımıza ulaştığı anda ilgili departman tarafından yapmış olduğunuz havale / EFT işlemi ile ilgili banka üzerinden kontrol edilir.</td>
-                </tr>
-                <tr>
-                    <td colspan="2">&nbsp;</td>
-                </tr>
-                <tr height="30">
-                    <td align="left" width="30"><img src="resimler/InsanlarSiyah20x20.png" alt="bankaIcon" border="0" style="margin-top: 3px;"></td>
-                    <td align="left"><b>Onay / Red</b></td>
-                </tr>
-                <tr height="30">
-                    <td colspan="2" align="left">Havale bildirimi geçerli ise yani ödeme hesaba geçmiş ise, yönetici ilgili ödeme onayını vererek, siparişiniz teslimat birimine iletilir.</td>
-                </tr>
-                <tr>
-                    <td colspan="2">&nbsp;</td>
-                </tr>
-                <tr height="30">
-                    <td align="left" width="30"><img src="resimler/SaatEsnetikGri20x20.png" alt="bankaIcon" border="0" style="margin-top: 3px;"></td>
-                    <td align="left"><b>Sipariş Hazırlama & Teslimat</b></td>
-                </tr>
-                <tr height="30">
-                    <td colspan="2" align="left">Yönetici ödeme onayından sonra sayfamız üzerinden vermiş olduğunuz sipariş en kısa sürede hazırlanarak kargoya teslim edilir ve tarafınız ulaştırılır.</td>
+                    <td colspan="2" align="left">Sunduğumuz ürünler kalitelidir.</td>
                 </tr>
             </table>
         </td>

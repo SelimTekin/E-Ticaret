@@ -4,6 +4,13 @@ $IPAdresi     = $_SERVER["REMOTE_ADDR"];
 $zamanDamgasi = time();
 $tarihSaat    = date("d.m.Y H:i:s", $zamanDamgasi);
 
+function tarihCevir($deger){
+    $cevir = date("d.m.Y H:i:s", $deger);
+    $sonuc = $cevir;
+
+    return $sonuc;
+}
+
 function guvenlik($deger){
     $boslukSil      = trim($deger);
     $taglariTemizle = strip_tags($boslukSil);

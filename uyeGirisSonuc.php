@@ -33,7 +33,7 @@ if (($gelenEmailAdresi != "") and ($gelenSifre != "")) {
             $_SESSION["kullanici"] = $gelenEmailAdresi;
 
             if ($_SESSION["kullanici"] == $gelenEmailAdresi) {
-                header("Location:index.php?sayfaKodu=49");
+                header("Location:index.php?sayfaKodu=50");
                 exit();
             } else {
                 header("Location:index.php?sayfaKodu=33");

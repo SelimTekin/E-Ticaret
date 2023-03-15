@@ -49,6 +49,18 @@ $sayfa[44] = "yeniSifreOlusturSonucTamam.php";
 $sayfa[46] = "yeniSifreOlusturSonucHata.php";
 $sayfa[47] = "yeniSifreOlusturUyusmayanSifre.php";
 $sayfa[48] = "yeniSifreOlusturSonucEksikAlan.php";
-$sayfa[49] = "hesabimUyelikBilgilerim.php";
+$sayfa[49] = "uyeCikis.php";
+$sayfa[50] = "hesabimUyelikBilgilerim.php";
+$sayfa[51] = "hesabimUyelikBilgilerimGuncelle.php";
+$sayfa[52] = "hesabimUyelikBilgilerimGuncelleSonuc.php";
+$sayfa[53] = "hesabimUyelikBilgilerimGuncelleSonucTamam.php";
+$sayfa[54] = "hesabimUyelikBilgilerimGuncelleSonucHata.php";
+$sayfa[55] = "hesabimUyelikBilgilerimGuncelleSonucTekrarlanan.php";
+$sayfa[56] = "hesabimUyelikBilgilerimGuncelleSonucEksikAlan.php";
+$sayfa[57] = "hesabimUyelikBilgilerimGuncelleSonucUyusmayanSifre.php";
+$sayfa[58] = "hesabimAdresler.php";
+$sayfa[59] = "hesabimFavoriler.php";
+$sayfa[60] = "hesabimYorumlar.php";
+$sayfa[61] = "hesabimSiparisler.php";
 
 ?>

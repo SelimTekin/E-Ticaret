@@ -44,10 +44,24 @@ else{
                 <table width="1065" height="30" align="center" border="0" cellpadding="0" cellspacing="0">
                     <tr bgcolor="#0088CC">
                         <td>&nbsp;</td>
+                        <?php
+                        if(isset($_SESSION["kullanici"])){
+                        ?>
+                        <td width="20"><a href="xxxxx"><img src="resimler/KullaniciBeyaz16x16.png" alt="sepet" border="0" style="margin-top: 5px;"></a></td>
+                        <td width="70" class="maviAlanMenusu"><a href="index.php?sayfaKodu=50">Hesabım</a></td>
+                        <td width="20"><a href="xxxxx"><img src="resimler/CikisBeyaz16x16.png" alt="sepet" border="0" style="margin-top: 5px;"></a></td>
+                        <td width="85" class="maviAlanMenusu"><a href="index.php?sayfaKodu=49">Çıkış Yap</a></td>
+                        <?php
+                        }
+                        else{
+                        ?>
                         <td width="20"><a href="xxxxx"><img src="resimler/KullaniciBeyaz16x16.png" alt="sepet" border="0" style="margin-top: 5px;"></a></td>
                         <td width="70" class="maviAlanMenusu"><a href="index.php?sayfaKodu=31">Giriş Yap</a></td>
                         <td width="20"><a href="xxxxx"><img src="resimler/KullaniciEkleBeyaz16x16.png" alt="sepet" border="0" style="margin-top: 5px;"></a></td>
                         <td width="85" class="maviAlanMenusu"><a href="index.php?sayfaKodu=22">Yeni Üye Ol</a></td>
+                        <?php
+                        }
+                        ?>
                         <td width="20"><a href="xxxxx"><img src="resimler/SepetBeyaz16x16.png" alt="sepet" border="0" style="margin-top: 5px;"></a></td>
                         <td width="103" class="maviAlanMenusu"><a href="xxxxx">Alışveriş Sepeti</a></td>
                     </tr>
@@ -107,7 +121,18 @@ else{
                     <tr height="30">
                         <td class="altMenu">&nbsp;<a href="index.php?sayfaKodu=1">Hakkımızda</a></td>
                         <td>&nbsp;</td>
+                        <?php
+                        if(isset($_SESSION["kullanici"])){
+                        ?>
+                        <td class="altMenu"><a href="index.php?sayfaKodu=50">Hesabım</a></td>
+                        <?php
+                        }
+                        else{
+                        ?>
                         <td class="altMenu"><a href="index.php?sayfaKodu=31">Giriş Yap</a></td>
+                        <?php
+                        }
+                        ?>
                         <td>&nbsp;</td>
                         <td class="altMenu"><a href="index.php?sayfaKodu=2">Üyelik Sözleşmesi</a></td>
                         <td>&nbsp;</td>
@@ -123,7 +148,18 @@ else{
                     <tr height="30">
                         <td class="altMenu">&nbsp;<a href="index.php?sayfaKodu=8">Banka Hesaplarımız</a></td>
                         <td>&nbsp;</td>
+                        <?php
+                        if(isset($_SESSION["kullanici"])){
+                        ?>
+                        <td class="altMenu"><a href="index.php?sayfaKodu=49">Çıkış Yap</a></td>
+                        <?php
+                        }
+                        else{
+                        ?>
                         <td class="altMenu"><a href="index.php?sayfaKodu=22">Yeni Üye Ol</a></td>
+                        <?php
+                        }
+                        ?>
                         <td>&nbsp;</td>
                         <td class="altMenu"><a href="index.php?sayfaKodu=3">Kullanım Koşulları</a></td>
                         <td>&nbsp;</td>

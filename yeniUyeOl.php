@@ -59,6 +59,7 @@
                         <td align="left" width="25"><input type="checkbox" name="sozlesmeOnay" value="1"></td>
                         <td align="left" width="475" class="uyelikFormu"><a href="index.php?sayfaKodu=2">Üyelik Sözleşmesi</a>'ni Okudum ve Onaylıyorum.</td>
                     </tr>
+                    
                     <tr height="40">
                         <td colspan="2" align="center"><input type="submit" value="Üye Ol" class="maviButon"></td>
                     </tr>

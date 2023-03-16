@@ -47,17 +47,17 @@ else{
                         <?php
                         if(isset($_SESSION["kullanici"])){
                         ?>
-                        <td width="20"><a href="xxxxx"><img src="resimler/KullaniciBeyaz16x16.png" alt="sepet" border="0" style="margin-top: 5px;"></a></td>
+                        <td width="20"><a href="index.php?sayfaKodu=50"><img src="resimler/KullaniciBeyaz16x16.png" alt="sepet" border="0" style="margin-top: 5px;"></a></td>
                         <td width="70" class="maviAlanMenusu"><a href="index.php?sayfaKodu=50">Hesabım</a></td>
-                        <td width="20"><a href="xxxxx"><img src="resimler/CikisBeyaz16x16.png" alt="sepet" border="0" style="margin-top: 5px;"></a></td>
+                        <td width="20"><a href="index.php?sayfaKodu=49"><img src="resimler/CikisBeyaz16x16.png" alt="sepet" border="0" style="margin-top: 5px;"></a></td>
                         <td width="85" class="maviAlanMenusu"><a href="index.php?sayfaKodu=49">Çıkış Yap</a></td>
                         <?php
                         }
                         else{
                         ?>
-                        <td width="20"><a href="xxxxx"><img src="resimler/KullaniciBeyaz16x16.png" alt="sepet" border="0" style="margin-top: 5px;"></a></td>
+                        <td width="20"><a href="index.php?sayfaKodu=31"><img src="resimler/KullaniciBeyaz16x16.png" alt="sepet" border="0" style="margin-top: 5px;"></a></td>
                         <td width="70" class="maviAlanMenusu"><a href="index.php?sayfaKodu=31">Giriş Yap</a></td>
-                        <td width="20"><a href="xxxxx"><img src="resimler/KullaniciEkleBeyaz16x16.png" alt="sepet" border="0" style="margin-top: 5px;"></a></td>
+                        <td width="20"><a href="index.php?sayfaKodu=22"><img src="resimler/KullaniciEkleBeyaz16x16.png" alt="sepet" border="0" style="margin-top: 5px;"></a></td>
                         <td width="85" class="maviAlanMenusu"><a href="index.php?sayfaKodu=22">Yeni Üye Ol</a></td>
                         <?php
                         }

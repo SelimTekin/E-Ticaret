@@ -30,7 +30,7 @@ $sayfa[26] = "yeniUyeOlSonucEksikAlan.php";
 $sayfa[27] = "yeniUyeOlSonucTekrarlanan.php";
 $sayfa[28] = "yeniUyeOlSonucUyusmayanSifre.php";
 $sayfa[29] = "yeniUyeOlSonucOnaysizSozlesme.php";
-$sayfa[30] = "yeniUeyOlSonucAktivasyonTamam.php";
+$sayfa[30] = "yeniUyeOlSonucAktivasyonTamam.php";
 $sayfa[31] = "uyeGiris.php";
 $sayfa[32] = "uyeGirisSonuc.php";
 $sayfa[33] = "uyeGirisSonucHata.php";
@@ -62,5 +62,18 @@ $sayfa[58] = "hesabimAdresler.php";
 $sayfa[59] = "hesabimFavoriler.php";
 $sayfa[60] = "hesabimYorumlar.php";
 $sayfa[61] = "hesabimSiparisler.php";
+$sayfa[62] = "hesabimAdreslerGuncelle.php";
+$sayfa[63] = "hesabimAdreslerGuncelleSonuc.php";
+$sayfa[64] = "hesabimAdreslerGuncelleSonucTamam.php";
+$sayfa[65] = "hesabimAdreslerGuncelleSonucHata.php";
+$sayfa[66] = "hesabimAdreslerGuncelleSonucEksikAlan.php";
+$sayfa[67] = "hesabimAdreslerSil.php";
+$sayfa[68] = "hesabimAdreslerSilTamam.php";
+$sayfa[69] = "hesabimAdreslerSilHata.php";
+$sayfa[70] = "hesabimAdreslerEkle.php";
+$sayfa[71] = "hesabimAdreslerEkleSonuc.php";
+$sayfa[72] = "hesabimAdreslerEkleSonucTamam.php";
+$sayfa[73] = "hesabimAdreslerEkleSonucHata.php";
+$sayfa[74] = "hesabimAdreslerEkleSonucEksikAlan.php";
 
 ?>

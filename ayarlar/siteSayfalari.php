@@ -75,5 +75,11 @@ $sayfa[71] = "hesabimAdreslerEkleSonuc.php";
 $sayfa[72] = "hesabimAdreslerEkleSonucTamam.php";
 $sayfa[73] = "hesabimAdreslerEkleSonucHata.php";
 $sayfa[74] = "hesabimAdreslerEkleSonucEksikAlan.php";
+$sayfa[75] = "hesabimYorumYap.php";
+$sayfa[76] = "hesabimYorumYapSonuc.php";
+$sayfa[77] = "hesabimYorumYapSonucTamam.php";
+$sayfa[78] = "hesabimYorumYapSonucHata.php";
+$sayfa[79] = "hesabimYorumYapSonucEksikAlan.php";
+$sayfa[80] = "hesabimYorumlar.php";
 
 ?>

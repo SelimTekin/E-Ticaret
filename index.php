@@ -1,7 +1,7 @@
 <?php
 session_start();
 ob_start(); // çıktı tamponları (Birtakım değerleri alıp depolayacağız. Bunları yeri geldiğinde kullanacağız. ob_start() bu işe yarar.)
-// ob_end_flush() çıktı tamponlarını hem boşaltrı hem kapatır. (Sayfanın altında)
+// ob_end_flush() çıktı tamponlarını hem boşaltır hem kapatır. (Sayfanın altında)
 // ob_end_clean() silip kapatır.
 require_once("ayarlar/ayar.php");
 require_once("ayarlar/fonksiyonlar.php");
@@ -13,6 +13,14 @@ if(isset($_REQUEST["sayfaKodu"])){
 else{
     $sayfaKoduDegeri = 0;
 }
+
+if(isset($_REQUEST["sayfalama"])){
+    $sayfalama =  sayiIcerenIcerikleriFiltrele($_REQUEST["sayfalama"]);
+}
+else{
+    $sayfalama = 1;
+}
+
 ?>
 <!DOCTYPE html>
 <html lang="tr-TR">

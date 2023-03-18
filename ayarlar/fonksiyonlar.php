@@ -78,4 +78,11 @@ function aktivasyonKoduUret(){
     return $sonuc;
 }
 
+function fiyatBicimlendir($deger){
+    $bicimlendir = number_format($deger, "2", ",", "."); // 2 tane ondalık hane olacak, bu ondalık haneler virgülle ayrılacak, binlik hane gelirse nokta (.) ile ayrılır.
+    $sonuc = $bicimlendir;
+
+    return $sonuc;
+}
+
 ?>

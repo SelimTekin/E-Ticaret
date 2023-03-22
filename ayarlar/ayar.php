@@ -29,6 +29,8 @@ if ($ayarSayisi > 0) {
     $instagram          = $ayarlar["instagram"];
     $pinterest          = $ayarlar["pinterest"];
     $youtube            = $ayarlar["youtube"];
+    $dolarKuru          = $ayarlar["dolarKuru"];
+    $euroKuru           = $ayarlar["euroKuru"];
 } else {
     // echo "Site Ayar Sorgusu Hatalı"; // Bu alan kapalı kalsın çünkü hata olursa kullanıcı hatayı görmesin
     die();
@@ -37,9 +39,9 @@ if ($ayarSayisi > 0) {
 
 $metinlerSorgusu = $db->prepare("SELECT * FROM sozlesmelervemetinler LIMIT 1");
 $metinlerSorgusu->execute();
-$ayarSayisi     = $metinlerSorgusu->rowCount();
+$metinSayisi     = $metinlerSorgusu->rowCount();
 $metinler        = $metinlerSorgusu->fetch(PDO::FETCH_ASSOC);
-if ($ayarSayisi > 0) {
+if ($metinSayisi > 0) {
     $hakkimizdaMetni              = $metinler["hakkimizdaMetni"];
     $uyelikSozlesmesiMetni        = $metinler["uyelikSozlesmesiMetni"];
     $kullanimKosullariMetni       = $metinler["kullanimKosullariMetni"];

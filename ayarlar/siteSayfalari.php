@@ -84,5 +84,8 @@ $sayfa[80] = "hesabimYorumlar.php";
 $sayfa[81] = "hesabimFavorilerSil.php";
 $sayfa[82] = "hesabimFavorilerSilHata.php";
 $sayfa[83] = "urunDetay.php";
+$sayfa[84] = "erkekAyakkabilari.php";
+$sayfa[85] = "kadinAyakkabilari.php";
+$sayfa[86] = "cocukAyakkabilari.php";
 
 ?>

@@ -82,9 +82,9 @@ else{
                                 <tr>
                                     <td width="474" class="anaMenu">&nbsp;</td>
                                     <td width="95" class="anaMenu"><a href="index.php?sayfaKodu=0">Ana Sayfa</a></td>
-                                    <td width="148" class="anaMenu"><a href="xxxxx">Erkek Ayakkabıları</a></td>
-                                    <td width="148" class="anaMenu"><a href="xxxxx">Kadın Ayakkabıları</a></td>
-                                    <td width="145" class="anaMenu"><a href="xxxxx">Çocuk Ayakkabıları</a></td>
+                                    <td width="148" class="anaMenu"><a href="index.php?sayfaKodu=84">Erkek Ayakkabıları</a></td>
+                                    <td width="148" class="anaMenu"><a href="index.php?sayfaKodu=85">Kadın Ayakkabıları</a></td>
+                                    <td width="145" class="anaMenu"><a href="index.php?sayfaKodu=86">Çocuk Ayakkabıları</a></td>
                                 </tr>
                             </table>
                         </td>

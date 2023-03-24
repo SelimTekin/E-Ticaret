@@ -10,4 +10,9 @@ $(document).ready(function(){
 
     }
 
+    $.urunDetayResmiDegistir = function(klasor, resimDegeri){
+        var resimIcinDosyaYolu = "resimler/UrunResimleri/" + klasor + "/" + resimDegeri;
+        $("#buyukResim").attr("src", resimIcinDosyaYolu); // id'si buyukResim olan etiket için src attribute'u oluşturduk ve içeriğini 2. paramtrede verdik. (Zaten src vardı lakin burada içeriğini değiştirmek için böyle yaptık)
+    }
+
 });

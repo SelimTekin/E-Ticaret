@@ -71,7 +71,7 @@ else{
                         }
                         ?>
                         <td width="20"><a href="xxxxx"><img src="resimler/SepetBeyaz16x16.png" alt="sepet" border="0" style="margin-top: 5px;"></a></td>
-                        <td width="103" class="maviAlanMenusu"><a href="xxxxx">Alışveriş Sepeti</a></td>
+                        <td width="103" class="maviAlanMenusu"><a href="index.php?sayfaKodu=94">Alışveriş Sepeti</a></td>
                     </tr>
                 </table>
                 <table width="1065" height="80" align="center" border="0" cellpadding="0" cellspacing="0">
@@ -147,7 +147,7 @@ else{
                         <td>
                             <table width="250" height="30" align="center" border="0" cellpadding="0" cellspacing="0">
                                 <tr>
-                                    <td width="20" class="altMenu"><a href="xxxxx"><img src="resimler/Facebook16x16.png" alt="facebook" border="0" style="margin-top: 5px;"></a></td>
+                                    <td width="20" class="altMenu"><a href="<?php echo donusumleriGeriDondur($facebook); ?>"><img src="resimler/Facebook16x16.png" alt="facebook" border="0" style="margin-top: 5px;"></a></td>
                                     <td width="230" class="altMenu"><a href="<?php echo donusumleriGeriDondur($facebook); ?>" target="_blank ">Facebook</a></td>
                                 </tr>
                             </table>

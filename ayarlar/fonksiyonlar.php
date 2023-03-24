@@ -11,6 +11,16 @@ function tarihCevir($deger){
     return $sonuc;
 }
 
+function ucGunIleriTarihBul(){
+    global $zamanDamgasi;
+    $birGun  = 86400;
+    $hesapla = $zamanDamgasi + (3 * $birGun);
+    $cevir   = date("d.m.Y", $hesapla);
+    $sonuc   = $cevir;
+
+    return $sonuc;
+}
+
 function guvenlik($deger){
     $boslukSil      = trim($deger);
     $taglariTemizle = strip_tags($boslukSil);

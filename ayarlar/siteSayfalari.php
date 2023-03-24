@@ -87,5 +87,13 @@ $sayfa[83] = "urunDetay.php";
 $sayfa[84] = "erkekAyakkabilari.php";
 $sayfa[85] = "kadinAyakkabilari.php";
 $sayfa[86] = "cocukAyakkabilari.php";
+$sayfa[87] = "favorilereEkle.php";
+$sayfa[88] = "favorilereEkleTamam.php";
+$sayfa[89] = "favorilereEkleHata.php";
+$sayfa[90] = "favorilereEkleTekrarlanan.php";
+$sayfa[91] = "sepeteEkle.php";
+$sayfa[92] = "sepeteEkleHata.php";
+$sayfa[93] = "sepeteEkleUyeGirisiYapilmamis.php";
+$sayfa[94] = "alisverisSepeti.php";
 
 ?>

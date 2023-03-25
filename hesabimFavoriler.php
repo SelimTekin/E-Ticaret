@@ -1,5 +1,5 @@
 <?php
-if ($_SESSION["kullanici"]) { // üye girişi yapılmışsa hesabım sayfasına yönlendirir. Giriş yapmadan url üzerinden bu sayfaya erişilmesini engeller.
+if (isset($_SESSION["kullanici"])) { // üye girişi yapılmışsa hesabım sayfasına yönlendirir. Giriş yapmadan url üzerinden bu sayfaya erişilmesini engeller.
 
     $sayfalamaIcinSolveSagButonSayisi   = 2;
     $sayfaBasinaGosterilecekKayitSayisi = 10;

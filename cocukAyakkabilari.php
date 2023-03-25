@@ -183,19 +183,19 @@ $anaMenununTumUrunSayiSorgusu = $anaMenununTumUrunSayiSorgusu->fetch(PDO::FETCH_
                                     <td width="193" valign="top">
                                         <table width="193" align="left" border="0" cellpadding="0" cellspacing="0" style="margin-bottom: 10px;"> <!-- style="border: 1px solid #CCC; margin-bottom: 10px;" -->
                                             <tr height="40">
-                                                <td align="center"><a href="index.php?sayfakodu=83&id=<?php echo donusumleriGeriDondur($urun["id"]); ?>"><img src="resimler/urunResimleri/Cocuk/<?php echo donusumleriGeriDondur($urun["urunResmiBir"]); ?>" alt="Ürün Resmi" border="0" width="185" height="247"></a></td>
+                                                <td align="center"><a href="index.php?sayfaKodu=83&id=<?php echo donusumleriGeriDondur($urun["id"]); ?>"><img src="resimler/urunResimleri/Cocuk/<?php echo donusumleriGeriDondur($urun["urunResmiBir"]); ?>" alt="Ürün Resmi" border="0" width="185" height="247"></a></td>
                                             </tr>
                                             <tr height="25">
-                                                <td width="253" align="center"><a href="index.php?sayfakodu=83&id=<?php echo donusumleriGeriDondur($urun["id"]); ?>" style="color: #FF9900; font-weight: bold; text-decoration: none;">Çocuk Ayakkabısı</a></td>
+                                                <td width="253" align="center"><a href="index.php?sayfaKodu=83&id=<?php echo donusumleriGeriDondur($urun["id"]); ?>" style="color: #FF9900; font-weight: bold; text-decoration: none;">Çocuk Ayakkabısı</a></td>
                                             </tr>
                                             <tr height="25">
-                                                <td width="253" align="center"><a href="index.php?sayfakodu=83&id=<?php echo donusumleriGeriDondur($urun["id"]); ?>" style="color: #646464; font-weight: bold; text-decoration: none;"><div style="width: 193px; max-width: 193px; height: 20px; overflow: hidden; line-height: 20px;"><?php echo donusumleriGeriDondur($urun["urunAdi"]); ?></div></a></td>
+                                                <td width="253" align="center"><a href="index.php?sayfaKodu=83&id=<?php echo donusumleriGeriDondur($urun["id"]); ?>" style="color: #646464; font-weight: bold; text-decoration: none;"><div style="width: 193px; max-width: 193px; height: 20px; overflow: hidden; line-height: 20px;"><?php echo donusumleriGeriDondur($urun["urunAdi"]); ?></div></a></td>
                                             </tr>
                                             <tr height="25">
-                                                <td width="253" align="center"><a href="index.php?sayfakodu=83&id=<?php echo donusumleriGeriDondur($urun["id"]); ?>"><img src="resimler/<?php echo $puanResmi; ?>" alt="Ürün Puanı"></a></td>
+                                                <td width="253" align="center"><a href="index.php?sayfaKodu=83&id=<?php echo donusumleriGeriDondur($urun["id"]); ?>"><img src="resimler/<?php echo $puanResmi; ?>" alt="Ürün Puanı"></a></td>
                                             </tr>
                                             <tr height="25">
-                                                <td width="253" align="center"><a href="index.php?sayfakodu=83&id=<?php echo donusumleriGeriDondur($urun["id"]); ?>" style="color: #0000FF; font-weight: bold; text-decoration: none;"><?php echo fiyatBicimlendir($urunFiyatiHesapla); ?> TL</a></td>
+                                                <td width="253" align="center"><a href="index.php?sayfaKodu=83&id=<?php echo donusumleriGeriDondur($urun["id"]); ?>" style="color: #0000FF; font-weight: bold; text-decoration: none;"><?php echo fiyatBicimlendir($urunFiyatiHesapla); ?> TL</a></td>
                                             </tr>
                                         </table>
                                     </td>

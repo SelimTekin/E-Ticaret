@@ -70,8 +70,8 @@ else{
                         <?php
                         }
                         ?>
-                        <td width="20"><a href="xxxxx"><img src="resimler/SepetBeyaz16x16.png" alt="sepet" border="0" style="margin-top: 5px;"></a></td>
-                        <td width="103" class="maviAlanMenusu"><a href="index.php?sayfaKodu=94">Alışveriş Sepeti</a></td>
+                        <td width="20"><?php if(isset($_SESSION["kullanici"])){ ?><a href="index.php?sayfaKodu=94"><img src="resimler/SepetBeyaz16x16.png" alt="sepet" border="0" style="margin-top: 5px;"></a><?php }else{ ?><a href="index.php?sayfaKodu=31"><img src="resimler/SepetBeyaz16x16.png" alt="sepet" border="0" style="margin-top: 5px;"></a><?php } ?></td>
+                        <td width="103" class="maviAlanMenusu"><?php if(isset($_SESSION["kullanici"])){ ?><a href="index.php?sayfaKodu=94">Alışveriş Sepeti</a><?php }else{ ?><a href="index.php?sayfaKodu=31">Alışveriş Sepeti</a><?php } ?></td>
                     </tr>
                 </table>
                 <table width="1065" height="80" align="center" border="0" cellpadding="0" cellspacing="0">

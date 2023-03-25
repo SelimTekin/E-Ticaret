@@ -1,6 +1,6 @@
 <?php
 
-if ($_SESSION["kullanici"]) {
+if (isset($_SESSION["kullanici"])) {
 
     if (isset($_GET["id"])) {
         $gelenId = guvenlik($_GET["id"]);

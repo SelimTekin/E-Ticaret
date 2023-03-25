@@ -1,5 +1,5 @@
 <?php
-if($_SESSION["kullanici"]){
+if(isset($_SESSION["kullanici"])){
     if(isset($_GET["id"])){
         $gelenId = $_GET["id"];
     }

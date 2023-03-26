@@ -31,6 +31,7 @@ if ($ayarSayisi > 0) {
     $youtube            = $ayarlar["youtube"];
     $dolarKuru          = $ayarlar["dolarKuru"];
     $euroKuru           = $ayarlar["euroKuru"];
+    $ucretsizKargoBaraji = $ayarlar["ucretsizKargoBaraji"];
 } else {
     // echo "Site Ayar Sorgusu Hatalı"; // Bu alan kapalı kalsın çünkü hata olursa kullanıcı hatayı görmesin
     die();

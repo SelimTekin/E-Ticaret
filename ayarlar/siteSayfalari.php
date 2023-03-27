@@ -100,5 +100,6 @@ $sayfa[96] = "alisverisSepetiUrunAdetAzalt.php";
 $sayfa[97] = "alisverisSepetiUrunAdetArttir.php";
 $sayfa[98] = "alisverisSepetiAdresVeKargoSecimi.php";
 $sayfa[99] = "alisverisSepetiOdemeSecimi.php";
+$sayfa[100] = "alisverisSepetiOdemeSecimiSonuc.php";
 
 ?>

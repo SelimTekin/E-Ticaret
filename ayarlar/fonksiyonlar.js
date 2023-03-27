@@ -15,4 +15,14 @@ $(document).ready(function(){
         $("#buyukResim").attr("src", resimIcinDosyaYolu); // id'si buyukResim olan etiket için src attribute'u oluşturduk ve içeriğini 2. paramtrede verdik. (Zaten src vardı lakin burada içeriğini değiştirmek için böyle yaptık)
     }
 
+    $.krediKartiSecildi = function(){
+        $(".KKAlanlari").css("display", "block");
+        $(".BHAlanlari").css("display", "none");
+    }
+
+    $.bankaHavalesiSecildi = function(){
+        $(".BHAlanlari").css("display", "block");
+        $(".KKAlanlari").css("display", "none");
+    }
+
 });

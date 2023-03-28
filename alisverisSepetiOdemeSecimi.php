@@ -18,8 +18,6 @@ if (isset($_SESSION["kullanici"])) {
         $sepetiGuncellemeSorgusu->execute([$gelenKargoSecimi, $gelenAdresSecimi, $kullaniciId]);
         $guncellemeKontrol       = $sepetiGuncellemeSorgusu->rowCount();
 
-        if($guncellemeKontrol > 0){
-
         $stokIcinSepettekiUrunlerSorgusu = $db->prepare("SELECT * FROM sepet WHERE uyeId = ?");
         $stokIcinSepettekiUrunlerSorgusu->execute([$kullaniciId]);
         $stokIcinSepettekiUrunSayisi     = $stokIcinSepettekiUrunlerSorgusu->rowCount();
@@ -114,7 +112,7 @@ if (isset($_SESSION["kullanici"])) {
             $sekizTaksitAylikOdemeTutari = number_format(($sepettekiToplamFiyat / 8), "2", ",", ".");
             $dokuzTaksitAylikOdemeTutari = number_format(($sepettekiToplamFiyat / 9), "2", ",", ".");
 ?>
-            <form action="index.php?sayfaKodu=99" method="post">
+            <form action="index.php?sayfaKodu=100" method="post">
                 <table width="1065" align="center" border="0" cellpadding="0" cellspacing="0">
                     <tr>
                         <td width="500" valign="top">
@@ -512,10 +510,6 @@ if (isset($_SESSION["kullanici"])) {
 <?php
         }else{
             header("Location: index.php?sayfaKodu=94");
-            exit();
-        }
-        } else {
-            header("Location: index.php");
             exit();
         }
     }

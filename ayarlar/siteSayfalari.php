@@ -101,5 +101,7 @@ $sayfa[97] = "alisverisSepetiUrunAdetArttir.php";
 $sayfa[98] = "alisverisSepetiAdresVeKargoSecimi.php";
 $sayfa[99] = "alisverisSepetiOdemeSecimi.php";
 $sayfa[100] = "alisverisSepetiOdemeSecimiSonuc.php";
+$sayfa[101] = "alisverisSepetiBankaHavalesiİleOdemeTamam.php";
+$sayfa[102] = "alisverisSepetiBankaHavalesiİleOdemeHata.php";
 
 ?>

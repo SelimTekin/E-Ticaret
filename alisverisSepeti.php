@@ -130,6 +130,9 @@ if (isset($_SESSION["kullanici"])) {
                     <?php
                             }
                         }else{
+
+                            $sepettekiToplamUrunSayisi = 0;
+                            $sepettekiToplamFiyat      = 0;
                     ?>
 
                     <tr height="30">

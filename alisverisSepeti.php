@@ -27,6 +27,10 @@ if (isset($_SESSION["kullanici"])) {
             }
         }
     }
+
+    $sepetSifirlamaSorgusu = $db->prepare("UPDATE sepet SET adresId = ?, kargoId = ?, odemeSecimi = ?, taksitSecimi = ? WHERE uyeId = ? LIMIT 1");
+    $sepetSifirlamaSorgusu->execute([0, 0, "", 0, $kullaniciId]);
+
 ?>
 
     <table width="1065" align="center" border="0" cellpadding="0" cellspacing="0">

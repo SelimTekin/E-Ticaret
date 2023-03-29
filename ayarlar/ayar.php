@@ -32,6 +32,10 @@ if ($ayarSayisi > 0) {
     $dolarKuru          = $ayarlar["dolarKuru"];
     $euroKuru           = $ayarlar["euroKuru"];
     $ucretsizKargoBaraji = $ayarlar["ucretsizKargoBaraji"];
+    $clientId           = $ayarlar["clientId"];
+    $storeKey           = $ayarlar["storeKey"];
+    $apiKullanicisi     = $ayarlar["apiKullanicisi"];
+    $apiSifresi         = $ayarlar["apiSifresi"];
 } else {
     // echo "Site Ayar Sorgusu Hatalı"; // Bu alan kapalı kalsın çünkü hata olursa kullanıcı hatayı görmesin
     die();

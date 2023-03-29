@@ -93,6 +93,12 @@ if (isset($_SESSION["kullanici"])) {
                     if($eklemeKontrol > 0){
                         $sepettenSilmeSorgusu = $db->prepare("DELETE FROM sepet WHERE id = ? AND uyeId = ? LIMIT 1");
                         $sepettenSilmeSorgusu->execute([$sepetIdsi, $sepettekiUyeId]);
+                        
+                        $urunSatisiArttirmaSorgusu = $db->prepare("UPDATE urunler SET toplamSatisSayisi = toplamSatisSayisi + ? WHERE id = ?");
+                        $urunSatisiArttirmaSorgusu->execute([$sepettekiUrunAdedi, $sepettekiUrunId]);
+
+                        $stokGuncellemeSorgusu = $db->prepare("UPDATE urunvaryantlari SET stokAdedi = stokAdedi - ? WHERE id = ? LIMIT 1");
+                        $stokGuncellemeSorgusu->execute([$sepettekiUrunAdedi, $sepettekiVaryantId]);
                     }
                     else{
                         header("Location:index.php?sayfaKodu=102");
@@ -109,7 +115,7 @@ if (isset($_SESSION["kullanici"])) {
 
                 if($toplamKargoUcretimiz >= $ucretsizKargoBaraji){
                     $siparisiGuncelle = $db->prepare("UPDATE siparisler SET kargoUcreti = ? WHERE uyeId = ? AND siparisNumarasi = ?");
-                    $siparisiGuncelle->execute([0, $kullaniciId, $sepetNumarasi]);
+                    $siparisiGuncelle->execute([0, $sepettekiUyeId, $sepetNumarasi]);
 
                 }
 
@@ -124,6 +130,19 @@ if (isset($_SESSION["kullanici"])) {
         }
         else{ // Kredi Kartı işlem yapılacaksa burası çalışır.
             if($gelenTaksitSecimi != ""){
+
+                $sepetiGuncelle = $db->prepare("UPDATE sepet SET odemeSecimi = ?, taksitSecimi = ? WHERE uyeId = ?");
+                $sepetiGuncelle->execute([$gelenOdemeTuruSecimi, $gelenTaksitSecimi, $kullaniciId]);
+                $sepetKontrol   = $sepetiGuncelle->rowCount();
+
+                if($sepetKontrol > 0){
+                    header("Location:index.php?sayfaKodu=103");
+                    exit();
+                }
+                else{
+                    header("Location:index.php");
+                    exit();
+                }
 
             }
             else{

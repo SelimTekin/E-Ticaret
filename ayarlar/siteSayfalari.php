@@ -103,5 +103,9 @@ $sayfa[99] = "alisverisSepetiOdemeSecimi.php";
 $sayfa[100] = "alisverisSepetiOdemeSecimiSonuc.php";
 $sayfa[101] = "alisverisSepetiBankaHavalesiİleOdemeTamam.php";
 $sayfa[102] = "alisverisSepetiBankaHavalesiİleOdemeHata.php";
+$sayfa[103] = "alisverisSepetiKrediKartiOdeme.php";
+$sayfa[104] = "alisverisSepetiKrediKartiOdemeSonuc.php";
+$sayfa[105] = "alisverisSepetiKrediKartiOdemeSonucTamam.php";
+$sayfa[106] = "alisverisSepetiKrediKartiOdemeSonucHata.php";
 
 ?>

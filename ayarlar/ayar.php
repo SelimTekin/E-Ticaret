@@ -83,3 +83,22 @@ if (isset($_SESSION["kullanici"])) {
         die();
     }
 }
+
+if (isset($_SESSION["yonetici"])) {
+    $yoneticiSorgusu    = $db->prepare("SELECT * FROM yoneticiler WHERE kullaniciAdi = ? LIMIT 1");
+    $yoneticiSorgusu->execute([$_SESSION["yonetici"]]);
+    $yoneticiSayisi     = $yoneticiSorgusu->rowCount();
+    $yonetici           = $yoneticiSorgusu->fetch(PDO::FETCH_ASSOC);
+
+    if ($yoneticiSayisi > 0) {
+        $yoneticiId              = $yonetici["id"];
+        $yoneticiKullaniciAdi    = $yonetici["kullaniciAdi"];
+        $yoneticiSifre           = $yonetici["sifre"];
+        $yoneticiIsimSoyisim     = $yonetici["isimSoyisim"];
+        $yoneticiEmailAdresi     = $yonetici["emailAdresi"];
+        $yoneticiTelefonNumarasi = $yonetici["telefonNumarasi"];
+    } else {
+        // echo "Yönetici Sorgusu Hatalı"; // Bu alan kapalı kalsın çünkü hata olursa kullanıcı hatayı görmesin
+        die();
+    }
+}

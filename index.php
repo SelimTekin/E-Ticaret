@@ -95,7 +95,7 @@ else{
 
         <tr>
             <td valign="top">
-                <table width="1065" align="center" border="0" cellpadding="0" cellspacing="0">
+                <table width="1065" height="100%" align="center" border="0" cellpadding="0" cellspacing="0">
                     <tr>
                         <td align="center">
                             <?php

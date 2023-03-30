@@ -48,3 +48,14 @@ html, body{
     font-weight: normal;
     text-decoration: none;
 }
+
+.anaMenuler a:link, .anaMenuler a:hover, .anaMenuler a:active, .anaMenuler a:visited{
+    font-family: "Open Sans", Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    color: #FFF;
+    line-height: 1.5;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
+    text-decoration: none;
+}

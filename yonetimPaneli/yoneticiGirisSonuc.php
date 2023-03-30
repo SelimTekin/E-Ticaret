@@ -25,7 +25,7 @@ if (empty($_SESSION["yonetici"])) {
 
                 $_SESSION["yonetici"] = $gelenYKullanici;
 
-                header("Location:index.php?sayfaKoduDis=0");
+                header("Location:index.php?sayfaKoduDis=0&sayfaKoduIc=0");
                 exit();
         } else {
             header("Location:index.php?sayfaKoduDis=3");

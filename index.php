@@ -147,8 +147,8 @@ else{
                         <td>
                             <table width="250" height="30" align="center" border="0" cellpadding="0" cellspacing="0">
                                 <tr>
-                                    <td width="20" class="altMenu"><a href="<?php echo donusumleriGeriDondur($facebook); ?>"><img src="resimler/Facebook16x16.png" alt="facebook" border="0" style="margin-top: 5px;"></a></td>
-                                    <td width="230" class="altMenu"><a href="<?php echo donusumleriGeriDondur($facebook); ?>" target="_blank ">Facebook</a></td>
+                                    <td width="20" class="altMenu"><a href="<?php echo donusumleriGeriDondur($facebook); ?>" target="_blank"><img src="resimler/Facebook16x16.png" alt="facebook" border="0" style="margin-top: 5px;"></a></td>
+                                    <td width="230" class="altMenu"><a href="<?php echo donusumleriGeriDondur($facebook); ?>" target="_blank">Facebook</a></td>
                                 </tr>
                             </table>
                         </td>
@@ -174,8 +174,8 @@ else{
                         <td>
                             <table width="250" height="30" align="center" border="0" cellpadding="0" cellspacing="0">
                                 <tr>
-                                    <td width="20" class="altMenu"><a href="xxxxx"><img src="resimler/Twitter16x16.png" alt="Twitter" border="0" style="margin-top: 5px;"></a></td>
-                                    <td width="230" class="altMenu"><a href="<?php echo donusumleriGeriDondur($twitter); ?>" target="_bla">Twitter</a></td>
+                                    <td width="20" class="altMenu"><a href="<?php echo donusumleriGeriDondur($twitter); ?>" target="_blank"><img src="resimler/Twitter16x16.png" alt="Twitter" border="0" style="margin-top: 5px;"></a></td>
+                                    <td width="230" class="altMenu"><a href="<?php echo donusumleriGeriDondur($twitter); ?>" target="_blank">Twitter</a></td>
                                 </tr>
                             </table>
                         </td>
@@ -190,8 +190,8 @@ else{
                         <td>
                             <table width="250" height="30" align="center" border="0" cellpadding="0" cellspacing="0">
                                 <tr>
-                                    <td width="20" class="altMenu"><a href="xxxxx"><img src="resimler/LinkedIn16x16.png" alt="LinkedIn" border="0" style="margin-top: 5px;"></a></td>
-                                    <td width="230" class="altMenu"><a href="<?php echo donusumleriGeriDondur($linkedin); ?>" target="_blank ">LinkedIn</a></td>
+                                    <td width="20" class="altMenu"><a href="<?php echo donusumleriGeriDondur($linkedin); ?>" target="_blank"><img src="resimler/LinkedIn16x16.png" alt="LinkedIn" border="0" style="margin-top: 5px;"></a></td>
+                                    <td width="230" class="altMenu"><a href="<?php echo donusumleriGeriDondur($linkedin); ?>" target="_blank">LinkedIn</a></td>
                                 </tr>
                             </table>
                         </td>
@@ -206,7 +206,7 @@ else{
                         <td>
                             <table width="250" height="30" align="center" border="0" cellpadding="0" cellspacing="0">
                                 <tr>
-                                    <td width="20" class="altMenu"><a href="xxxxx"><img src="resimler/Instagram16x16.png" alt="Instagram" border="0" style="margin-top: 5px;"></a></td>
+                                    <td width="20" class="altMenu"><a href="<?php echo donusumleriGeriDondur($instagram); ?>" target="_blank"><img src="resimler/Instagram16x16.png" alt="Instagram" border="0" style="margin-top: 5px;"></a></td>
                                     <td width="230" class="altMenu"><a href="<?php echo donusumleriGeriDondur($instagram); ?>" target="_blank">Instagram</a></td>
                                 </tr>
                             </table>
@@ -222,8 +222,8 @@ else{
                         <td>
                             <table width="250" height="30" align="center" border="0" cellpadding="0" cellspacing="0">
                                 <tr>
-                                    <td width="20" class="altMenu"><a href="xxxxx"><img src="resimler/YouTube16x16.png" alt="YouTube" border="0" style="margin-top: 5px;"></a></td>
-                                    <td width="230" class="altMenu"><a href="<?php echo donusumleriGeriDondur($youtube); ?>" target="_bla">YouTube</a></td>
+                                    <td width="20" class="altMenu"><a href="<?php echo donusumleriGeriDondur($youtube); ?>" target="_blank"><img src="resimler/YouTube16x16.png" alt="YouTube" border="0" style="margin-top: 5px;"></a></td>
+                                    <td width="230" class="altMenu"><a href="<?php echo donusumleriGeriDondur($youtube); ?>" target="_blank">YouTube</a></td>
                                 </tr>
                             </table>
                         </td>
@@ -238,7 +238,7 @@ else{
                         <td>
                             <table width="250" height="30" align="center" border="0" cellpadding="0" cellspacing="0">
                                 <tr>
-                                    <td width="20" class="altMenu"><a href="xxxxx"><img src="resimler/Pinterest16x16.png" alt="Pinterest" border="0" style="margin-top: 5px;"></a></td>
+                                    <td width="20" class="altMenu"><a href="<?php echo donusumleriGeriDondur($pinterest); ?>" target="_blank"><img src="resimler/Pinterest16x16.png" alt="Pinterest" border="0" style="margin-top: 5px;"></a></td>
                                     <td width="230" class="altMenu"><a href="<?php echo donusumleriGeriDondur($pinterest); ?>" target="_blank">Pinterest</a></td>
                                 </tr>
                             </table>

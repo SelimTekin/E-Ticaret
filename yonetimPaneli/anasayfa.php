@@ -6,7 +6,7 @@ if (isset($_SESSION["yonetici"])) {
             <td width="300" align="center" bgcolor="#001d26" valign="top">
                 <table width="300" align="center" border="0" cellpadding="0" cellspacing="0">
                     <tr height="70">
-                        <td align="center"><a href="index.php?sayfaKoduDis=0&sayfaKoduIc=0"><img src="../resimler/logo.png" alt="Site Logosu" border="0"></a></td>
+                        <td align="center"><a href="index.php?sayfaKoduDis=0&sayfaKoduIc=0"><img src="../resimler/<?php echo donusumleriGeriDondur($siteLogosu); ?>" alt="Site Logosu" border="0"></a></td>
                     </tr>
                     <tr height="2">
                         <td align="center" bgcolor="#FF0000" style="line-height: 2px; font-size: 2px;">&nbsp;</td>
@@ -27,7 +27,7 @@ if (isset($_SESSION["yonetici"])) {
                         <td align="left" style="border-bottom: 1px dashed #00c8ff;" class="anaMenuler"><a href="index.php?sayfaKoduDis=0&sayfaKoduIc=xxxxx">&nbsp;YORUMLAR</a></td>
                     </tr>
                     <tr height="50">
-                        <td align="left" style="border-bottom: 1px dashed #00c8ff;" class="anaMenuler"><a href="index.php?sayfaKoduDis=0&sayfaKoduIc=xxxxx">&nbsp;SİTE AYARLARI</a></td>
+                        <td align="left" style="border-bottom: 1px dashed #00c8ff;" class="anaMenuler"><a href="index.php?sayfaKoduDis=0&sayfaKoduIc=1">&nbsp;SİTE AYARLARI</a></td>
                     </tr>
                     <tr height="50">
                         <td align="left" style="border-bottom: 1px dashed #00c8ff;" class="anaMenuler"><a href="index.php?sayfaKoduDis=0&sayfaKoduIc=xxxxx">&nbsp;MENÜLER</a></td>
@@ -49,6 +49,9 @@ if (isset($_SESSION["yonetici"])) {
                     </tr>
                     <tr height="50">
                         <td align="left" style="border-bottom: 1px dashed #00c8ff;" class="anaMenuler"><a href="index.php?sayfaKoduDis=0&sayfaKoduIc=xxxxx">&nbsp;YÖNETİCİLER</a></td>
+                    </tr>
+                    <tr height="50">
+                        <td align="left" style="border-bottom: 1px dashed #00c8ff;" class="anaMenuler"><a href="index.php?sayfaKoduDis=4">&nbsp;ÇIKIŞ</a></td>
                     </tr>
                 </table>
             </td>

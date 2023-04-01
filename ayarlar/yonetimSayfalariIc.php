@@ -1,10 +1,10 @@
 <?php
 
 $sayfaIc[0]  = "pano.php";
-$sayfaIc[1]  = ".php";
-$sayfaIc[2]  = ".php";
-$sayfaIc[3]  = ".php";
-$sayfaIc[4]  = ".php";
+$sayfaIc[1]  = "siteAyarlari.php";
+$sayfaIc[2]  = "siteAyarlariSonuc.php";
+$sayfaIc[3]  = "siteAyarlariSonucTamam.php";
+$sayfaIc[4]  = "siteAyarlariSonucHata.php";
 $sayfaIc[5]  = ".php";
 $sayfaIc[6]  = ".php";
 $sayfaIc[7]  = ".php";

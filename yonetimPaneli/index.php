@@ -5,6 +5,8 @@ ob_start(); // çıktı tamponları (Birtakım değerleri alıp depolayacağız.
 // ob_end_clean() silip kapatır.
 require_once("../ayarlar/ayar.php");
 require_once("../ayarlar/fonksiyonlar.php");
+require_once("../frameworks/verot/src/class.upload.php"); // bu framework sayesinde dosya(resim) işlemleri yapabileceğiz.
+// require_once("../frameworks/class.upload.php-master/src/class.upload.php"); // bu framework sayesinde dosya(resim) işlemleri yapabileceğiz.
 require_once("../ayarlar/yonetimSayfalariDis.php");
 require_once("../ayarlar/yonetimSayfalariIc.php");
 

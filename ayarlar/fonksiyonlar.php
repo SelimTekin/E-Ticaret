@@ -1,8 +1,11 @@
 <?php
 
-$IPAdresi     = $_SERVER["REMOTE_ADDR"];
-$zamanDamgasi = time();
-$tarihSaat    = date("d.m.Y H:i:s", $zamanDamgasi);
+$IPAdresi            = $_SERVER["REMOTE_ADDR"];
+$zamanDamgasi        = time();
+$tarihSaat           = date("d.m.Y H:i:s", $zamanDamgasi);
+$siteKokDizini       = $_SERVER["DOCUMENT_ROOT"];
+$resimKlasoruYolu    = "/E-Ticaret/resimler/";
+$verotIcinKlasorYolu = $siteKokDizini.$resimKlasoruYolu;
 
 function tarihCevir($deger){
     $cevir = date("d.m.Y H:i:s", $deger);

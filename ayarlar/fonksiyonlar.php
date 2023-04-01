@@ -98,4 +98,9 @@ function fiyatBicimlendir($deger){
     return $sonuc;
 }
 
+function resimAdiOlustur(){
+    $sonuc = substr(md5(uniqid(time())), 0, 25); // md5 32 karakterden oluşturur. Biz ilk 25 karakteri aldık. Hiçbir zaman aynı değer gelmez.
+    return $sonuc;
+}
+
 ?>

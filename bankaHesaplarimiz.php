@@ -30,7 +30,7 @@
                             <td width="348">
                                 <table align="center" border="0" cellpadding="0" cellspacing="0" style="border: 1px solid #CCC; margin-bottom: 10px;">
                                     <tr height="40">
-                                        <td colspan="4" align="center"><img src="resimler/Banka20x20.png" alt="bankaIcon"></td>
+                                        <td colspan="4" align="center"><img src="resimler/<?php echo $banka["bankaLogosu"]; ?>" alt="bankaIcon"></td>
                                     </tr>
                                     <tr height="25">
                                         <td width="5">&nbsp;</td>

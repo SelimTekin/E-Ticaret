@@ -1,7 +1,7 @@
 <table width="760" align="center" border="0" cellpadding="0" cellspacing="0">
     <tr height="70">
         <td bgcolor="#FF9900" style="color: #FFF">
-            <h3>&nbsp;SİTE AYARLARI</h3>
+            <h3>&nbsp;SÖZLEŞMELER ve METİNLER</h3>
         </td>
     </tr>
     <tr height="10">
@@ -16,7 +16,7 @@
                 <td align="center"><img src="../resimler/Tamam.png" alt="tamam" border="0"></td>
             </tr>
             <tr height="50">
-                <td align="center"><b>TEBRİKLER. Site Ayarları Güncellendi.</b></td>
+                <td align="center"><b>TEBRİKLER. Sözleşme ve Metinler Güncellendi.</b></td>
             </tr>
             <tr>
                 <td align="center">Belirtmiş olduğunuz bilgiler doğrultusunda mevcut içerikler güncellendi.</td>

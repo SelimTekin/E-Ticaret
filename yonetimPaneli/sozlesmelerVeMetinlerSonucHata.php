@@ -1,7 +1,7 @@
 <table width="760" align="center" border="0" cellpadding="0" cellspacing="0">
     <tr height="70">
         <td bgcolor="#FF9900" style="color: #FFF">
-            <h3>&nbsp;SİTE AYARLARI</h3>
+            <h3>&nbsp;SÖZLEŞMELER ve METİNLER</h3>
         </td>
     </tr>
     <tr height="10">
@@ -13,13 +13,13 @@
                 <td align="center">&nbsp;</td>
             </tr>
             <tr height="100">
-                <td align="center"><img src="../resimler/Tamam.png" alt="tamam" border="0"></td>
+                <td align="center"><img src="../resimler/Hata.png" alt="tamam" border="0"></td>
             </tr>
             <tr height="50">
-                <td align="center"><b>TEBRİKLER. Site Ayarları Güncellendi.</b></td>
+                <td align="center"><b>HATA. Sözleşme ve Metinler Güncellenemedi.</b></td>
             </tr>
             <tr>
-                <td align="center">Belirtmiş olduğunuz bilgiler doğrultusunda mevcut içerikler güncellendi.</td>
+                <td align="center">İşlem sırasında beklenmeyen bir hata oluştu. Lütfen daha sonra tekrar deneyiniz.</td>
             </tr>
             <tr>
                 <td class="sonucSayfalari" align="center">Ana sayfaya dönmek için lütfen buraya <a href="index.php?sayfaKoduDis=0&sayfaKoduIc=0"><b>tıklayınız</b></a>.</td>

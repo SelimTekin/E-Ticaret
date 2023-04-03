@@ -69,9 +69,10 @@ if (isset($_SESSION["yonetici"])) {
             if ($bankaLogosuYukle->uploaded) { // sınıfın uploaded özelliğini çağırdık ve yükleme yapılabilir mi kontrolü yaptık.
                 // save uploaded image with no changes
 
-                $bankaLogosuYukle->image_convert  = 'png'; // dosya türü ne gelirse gelsin(jpg, pdf, tif, zip...) png yapar
+                // $bankaLogosuYukle->image_convert  = 'png'; // dosya türü ne gelirse gelsin(jpg, pdf, tif, zip...) png yapar
                 // $bankaLogosuYukle->jpeg_quality = 100; // resmin kalitesini %100 yaptık(png olmuyor)
                 $bankaLogosuYukle->image_resize = true; // boyutlandırma yaptık. belirttiğimiz değerin üzerinde boyuta ulaşırsa istediğimiz değere kırpar.
+                $bankaLogosuYukle->image_ratio  = true; // resmin ölçülerini koru demek oluyor.
                 $bankaLogosuYukle->image_y = 30;                // resim yüksekliği
                 $bankaLogosuYukle->file_new_name_body = $resimIcinDosyaAdi; // resim dosyası logo olarak isimlendirildi
                 $bankaLogosuYukle->mime_check = true;         // mime türünü kontrol ettik ettik. (Biz alt satırda image olmasını istedik mime türünün. Ama pdf, gif felan gelirse hata döndürür.)

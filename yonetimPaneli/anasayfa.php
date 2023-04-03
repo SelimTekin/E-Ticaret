@@ -42,7 +42,7 @@ if (isset($_SESSION["yonetici"])) {
                         <td align="left" style="border-bottom: 1px dashed #00c8ff;" class="anaMenuler"><a href="index.php?sayfaKoduDis=0&sayfaKoduIc=21">&nbsp;KARGO AYARLARI</a></td>
                     </tr>
                     <tr height="50">
-                        <td align="left" style="border-bottom: 1px dashed #00c8ff;" class="anaMenuler"><a href="index.php?sayfaKoduDis=0&sayfaKoduIc=xxxxx">&nbsp;BANNER AYARLARI</a></td>
+                        <td align="left" style="border-bottom: 1px dashed #00c8ff;" class="anaMenuler"><a href="index.php?sayfaKoduDis=0&sayfaKoduIc=33">&nbsp;BANNER AYARLARI</a></td>
                     </tr>
                     <tr height="50">
                         <td align="left" style="border-bottom: 1px dashed #00c8ff;" class="anaMenuler"><a href="index.php?sayfaKoduDis=0&sayfaKoduIc=xxxxx">&nbsp;DESTEK İÇERİKLERİ</a></td>

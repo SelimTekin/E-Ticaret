@@ -69,7 +69,7 @@ if (isset($_SESSION["yonetici"])) {
             if ($bankaLogosuYukle->uploaded) { // sınıfın uploaded özelliğini çağırdık ve yükleme yapılabilir mi kontrolü yaptık.
                 // save uploaded image with no changes
 
-                // $bankaLogosuYukle->image_convert  = 'png'; // dosya türü ne gelirse gelsin(jpg, pdf, tif, zip...) png yapar
+                // $bankaLogosuYukle->image_convert  = ''; // dosya türü ne gelirse gelsin(jpg, pdf, tif, zip...) jpeg yapar. Varsayılan jpg. BU KODU YAZMAZSAN PNG OLARAK KAYDEDER.
                 // $bankaLogosuYukle->jpeg_quality = 100; // resmin kalitesini %100 yaptık(png olmuyor)
                 $bankaLogosuYukle->image_resize = true; // boyutlandırma yaptık. belirttiğimiz değerin üzerinde boyuta ulaşırsa istediğimiz değere kırpar.
                 $bankaLogosuYukle->image_ratio  = true; // resmin ölçülerini koru demek oluyor.

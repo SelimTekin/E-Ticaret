@@ -17,9 +17,9 @@ if (isset($_SESSION["yonetici"])) {
         <table width="760" align="center" border="0" cellpadding="0" cellspacing="0">
             <tr height="70">
                 <td width="560" bgcolor="#FF9900" style="color: #FFF" align="left">
-                    <h3>&nbsp;BANKA HESAP AYARLARI</h3>
+                    <h3>&nbsp;KARGO AYARLARI</h3>
                 </td>
-                <td width="200" colspan="2" bgcolor="#FF9900" align="right"><a href="index.php?sayfaKoduDis=0&sayfaKoduIc=22" style="color: #FFF; text-decoration: none;">Yeni Banka Hesabı Ekle&nbsp;</a></td>
+                <td width="200" colspan="2" bgcolor="#FF9900" align="right"><a href="index.php?sayfaKoduDis=0&sayfaKoduIc=22" style="color: #FFF; text-decoration: none;">Yeni Kargo Firması Ekle&nbsp;</a></td>
             </tr>
             <tr height="10">
                 <td colspan="2" style="font-size: 10px;">&nbsp;</td>
@@ -41,7 +41,7 @@ if (isset($_SESSION["yonetici"])) {
                         <tr height="40">
                             <td>&nbsp;</td>
                             <td>&nbsp;</td>
-                            <td width="500"><input type="submit" value="Kargo Firması Hesabı Kaydet" class="maviButon"></td>
+                            <td width="500"><input type="submit" value="Kargo Firması Güncelle" class="maviButon"></td>
                         </tr>
                     </table>
                 </td>

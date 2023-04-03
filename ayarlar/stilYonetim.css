@@ -22,6 +22,18 @@ html, body{
     padding: 0px 10px;
 }
 
+.selectAlanlari{
+    width: 100%;
+    height: 40px;
+    padding: 0px 10px;
+}
+
+.textAreaAlanlari{
+    width: 95%;
+    height: 150px;
+    padding: 10px 10px;
+}
+
 .maviButon{
     height: 30px;
     border: 1px solid #0400ff;
@@ -58,10 +70,4 @@ html, body{
     font-variant: normal;
     font-weight: normal;
     text-decoration: none;
-}
-
-.textAreaAlanlari{
-    width: 95%;
-    height: 150px;
-    padding: 10px 10px;
 }

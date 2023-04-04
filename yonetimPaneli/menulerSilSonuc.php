@@ -17,7 +17,7 @@ if (isset($_SESSION["yonetici"])) {
         if ($menuSilmeKontrol > 0) {
 
             $urunlerSorgusu        = $db->prepare("SELECT * FROM urunler WHERE menuId = ? LIMIT 1");
-            $urunlerSorgusu->execute([0, $gelenId]);
+            $urunlerSorgusu->execute([$gelenId]);
             $urunlerSorgusuKontrol = $urunlerSorgusu->rowCount();
 
             if($urunlerSorgusuKontrol > 0){

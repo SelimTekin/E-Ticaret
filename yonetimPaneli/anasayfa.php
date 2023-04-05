@@ -48,7 +48,7 @@ if (isset($_SESSION["yonetici"])) {
                         <td align="left" style="border-bottom: 1px dashed #00c8ff;" class="anaMenuler"><a href="index.php?sayfaKoduDis=0&sayfaKoduIc=44">&nbsp;DESTEK İÇERİKLERİ</a></td>
                     </tr>
                     <tr height="50">
-                        <td align="left" style="border-bottom: 1px dashed #00c8ff;" class="anaMenuler"><a href="index.php?sayfaKoduDis=0&sayfaKoduIc=xxxxx">&nbsp;YÖNETİCİLER</a></td>
+                        <td align="left" style="border-bottom: 1px dashed #00c8ff;" class="anaMenuler"><a href="index.php?sayfaKoduDis=0&sayfaKoduIc=69">&nbsp;YÖNETİCİLER</a></td>
                     </tr>
                     <tr height="50">
                         <td align="left" style="border-bottom: 1px dashed #00c8ff;" class="anaMenuler"><a href="index.php?sayfaKoduDis=4">&nbsp;ÇIKIŞ</a></td>

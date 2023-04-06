@@ -23,8 +23,8 @@ $MD5liSifre     = md5($gelenSifre);
 
 if (($gelenEmailAdresi != "") and ($gelenSifre != "")) {
 
-    $kontrolSorgusu  = $db->prepare("SELECT * FROM uyeler WHERE emailAdresi = ? AND sifre = ?");
-    $kontrolSorgusu->execute([$gelenEmailAdresi, $MD5liSifre]);
+    $kontrolSorgusu  = $db->prepare("SELECT * FROM uyeler WHERE emailAdresi = ? AND sifre = ? AND silinmeDurumu = ?");
+    $kontrolSorgusu->execute([$gelenEmailAdresi, $MD5liSifre, 0]);
     $kullaniciSayisi = $kontrolSorgusu->rowCount();
     $kullanicKaydi   = $kontrolSorgusu->fetch(PDO::FETCH_ASSOC);
 

@@ -71,3 +71,152 @@ html, body{
     font-weight: normal;
     text-decoration: none;
 }
+
+.sayfalamaAlaniKapsayicisi{
+    display: block;
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    text-align: center;
+    text-decoration: none;
+}
+
+.sayfalamaAlaniIciMetinAlaniKapsayicisi{
+    display: block;
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    text-align: center;
+    text-decoration: none;
+}
+
+.sayfalamaAlaniIciNumaraAlaniKapsayicisi{
+    display: block;
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    text-align: center;
+    text-decoration: none;
+}
+
+.sayfalamaAktif{
+    display: inline-block;
+    width: auto;
+    height: 20px;
+    margin: 0px 0.5px;
+    padding: 5px 7.5px;
+    background: #F6F6F6;
+    border: 1px solid #DADADA;
+    outline: 0;
+    color:#FF0000;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.sayfalamaPasif{
+    display: inline-block;
+    width: auto;
+    height: 20px;
+    margin: 0px 0.5px;
+    padding: 5px 7.5px;
+    background: #F6F6F6;
+    border: 1px solid #DADADA;
+    outline: 0;
+    color:#646464;
+    font-weight: normal;
+    text-decoration: none;
+}
+
+.sayfalamaPasif a:link, .sayfalamaPasif a:hover, .sayfalamaPasif a:active, .sayfalamaPasif a:visited{
+    color:#646464;
+    text-decoration: none;
+}
+
+.aramaAlani{
+    display: block;
+    width: 100%;
+    height: 35px;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    border: 0;
+    outline: 0;
+    vertical-align: top;
+}
+
+.aramaAlaniButonKapsamaAlani{
+    display: inline-block;
+    float: right;
+    width: 60px;
+    height: 35px;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    border: 0;
+    outline: 0;
+    text-align: left;
+}
+
+.aramaAlaniInputKapsamaAlani{
+    display: inline-block;
+    float: right;
+    width: -webkit-calc(100% - 60px);
+    width: -moz-calc(100% - 60px);
+    width: -o-calc(100% - 60px);
+    width: -ms-calc(100% - 60px);
+    width: calc(100% - 60px);
+    height: 35px;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    border: 0;
+    outline: 0;
+    text-align: left;
+}
+
+.aramaAlaniButonu{
+    display: block;
+    width: 60px;
+    height: 35px;
+    margin: 0;
+    padding: 0;
+    border: 1px solid #646464;
+    outline: 0;
+    background: url("../resimler/AraButonuIciBuyuteci.png");
+    background-repeat: no-repeat;
+    background-position: center left 19px;
+}
+
+.aramaAlaniButonu:hover{
+    cursor: pointer;
+}
+
+.aramaAlaniInputu{
+    display: block;
+    float: left;
+    width: -webkit-calc(100% - 42px);
+    width: -moz-calc(100% - 42px);
+    width: -o-calc(100% - 42px);
+    width: -ms-calc(100% - 42px);
+    width: calc(100% - 42px);
+    height: 33px;
+    margin: 0;
+    padding: 0;
+    padding-left: 30px;
+    padding-right: 10px;
+    background: url("../resimler/AramaTextInputuIciSoruIsareti.png");
+    background-repeat: no-repeat;
+    background-position: center left 10px; /* ortalasın, soldan başlasın */
+    border: 1px solid #646464;
+    outline: 0;
+    text-align: left;
+}

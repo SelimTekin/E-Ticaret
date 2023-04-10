@@ -679,7 +679,6 @@ if (isset($_SESSION["yonetici"])) {
                             $onuncuVaryantSilmeKontrol = $onuncuVaryantSilmeSorgusu->rowCount();
 
                             if($onuncuVaryantSilmeKontrol < 1){
-                                echo "1";die();
                                 header("Location: index.php?sayfaKoduDis=0&sayfaKoduIc=102");
                                 exit();
                             }
@@ -692,7 +691,6 @@ if (isset($_SESSION["yonetici"])) {
                                 $onuncuVaryantEklemeKontrol = $onuncuVaryantEklemeSorgusu->rowCount();
 
                                 if($onuncuVaryantEklemeKontrol < 1){
-                                    echo "4";die();
                                     header("Location: index.php?sayfaKoduDis=0&sayfaKoduIc=102");
                                     exit();
                                 }
@@ -704,17 +702,14 @@ if (isset($_SESSION["yonetici"])) {
                     exit();
                     
             } else {
-                echo "2";die();
                 header("Location: index.php?sayfaKoduDis=1&sayfaKoduIc=102");
                 exit();
             }
         } else {
-            echo "5";die();
             header("Location: index.php?sayfaKoduDis=1&sayfaKoduIc=102");
             exit();
         }
     } else {
-        echo "6";die();
         header("Location: index.php?sayfaKoduDis=1&sayfaKoduIc=102");
         exit();
     }

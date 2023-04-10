@@ -19,10 +19,24 @@ if (isset($_SESSION["yonetici"])) {
             $urunlerSorgusu        = $db->prepare("SELECT * FROM urunler WHERE menuId = ? LIMIT 1");
             $urunlerSorgusu->execute([$gelenId]);
             $urunlerSorgusuKontrol = $urunlerSorgusu->rowCount();
+            $urunlerKayitlari      = $urunlerSorgusu->fetchAll(PDO::FETCH_ASSOC);
 
             if($urunlerSorgusuKontrol > 0){
-                $urunlerGuncellemeSorgusu = $db->prepare("UPDATE urunler SET durumu = ? WHERE menuId = ? LIMIT 1");
-                $urunlerGuncellemeSorgusu->execute([0, $gelenId]);
+
+                foreach($urunlerKayitlari as $urunKaydi){
+
+                    $silinecekUrununIdsi = $urunKaydi["id"];
+
+                    $urunlerGuncellemeSorgusu = $db->prepare("UPDATE urunler SET durumu = ? WHERE id = ? AND menuId = ? LIMIT 1");
+                    $urunlerGuncellemeSorgusu->execute([0, $silinecekUrununIdsi, $gelenId]);
+    
+                    $sepetSilmeSorgusu        = $db->prepare("DELETE FROM sepet WHERE urunId = ?");
+                    $sepetSilmeSorgusu->execute([$silinecekUrununIdsi]);
+    
+                    $favorilerSilmeSorgusu        = $db->prepare("DELETE FROM favoriler WHERE urunId = ?");
+                    $favorilerSilmeSorgusu->execute([$silinecekUrununIdsi]);
+                }
+
             }
 
             header("Location: index.php?sayfaKoduDis=0&sayfaKoduIc=67");

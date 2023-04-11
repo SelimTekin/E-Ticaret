@@ -116,7 +116,9 @@ $sayfaIc[112] = "siparisKargoKoduGirisSonucHata.php";
 $sayfaIc[113] = "siparisSilSonuc.php";
 $sayfaIc[114] = "siparisSilSonucTamam.php";
 $sayfaIc[115] = "siparisSilSonucHata.php";
-$sayfaIc[116] = ".php";
-$sayfaIc[117] = ".php";
+$sayfaIc[116] = "havaleBildirimleri.php";
+$sayfaIc[117] = "havaleBildirimleriSilSonuc.php";
+$sayfaIc[118] = "havaleBildirimleriSilSonucTamam.php";
+$sayfaIc[119] = "havaleBildirimleriSilSonucHata.php";
 
 ?>

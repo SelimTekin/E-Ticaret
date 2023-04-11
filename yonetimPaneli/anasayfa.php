@@ -12,7 +12,7 @@ if (isset($_SESSION["yonetici"])) {
                         <td align="center" bgcolor="#FF0000" style="line-height: 2px; font-size: 2px;">&nbsp;</td>
                     </tr>
                     <tr height="50">
-                        <td align="left" style="border-bottom: 1px dashed #00c8ff;" class="anaMenuler"><a href="index.php?sayfaKoduDis=0&sayfaKoduIc=xxxxx">&nbsp;SİPARİŞLER</a></td>
+                        <td align="left" style="border-bottom: 1px dashed #00c8ff;" class="anaMenuler"><a href="index.php?sayfaKoduDis=0&sayfaKoduIc=106">&nbsp;SİPARİŞLER</a></td>
                     </tr>
                     <tr height="50">
                         <td align="left" style="border-bottom: 1px dashed #00c8ff;" class="anaMenuler"><a href="index.php?sayfaKoduDis=0&sayfaKoduIc=xxxxx">&nbsp;HAVALE BİLDİRİMLERİ</a></td>

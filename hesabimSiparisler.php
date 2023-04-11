@@ -70,7 +70,7 @@ if (isset($_SESSION["kullanici"])) { // üye girişi yapılmışsa hesabım sayf
                     </tr>
 
                     <?php
-                    // Bir kullanıcı birden fazla siparişi olabilir. O yüzden ilk önce DISTINCT ile kullanıcının bir veya birden verdiği siparişlerin numarası'nın bir tanesini aldık.
+                    // Bir kullanıcı birden fazla siparişi olabilir. O yüzden ilk önce DISTINCT ile kullanıcının bir veya birden fazla verdiği siparişlerin numarası'nın bir tanesini aldık.
                     // Sonradan bu sipariş numarasına ait bütün siparişleri alacağız.
                     $siparisNumaralariSorgusu = $db->prepare("SELECT DISTINCT siparisNumarasi FROM siparisler WHERE uyeId = ? ORDER BY siparisNumarasi DESC LIMIT $sayfalamayaBaslanacakKayitSayisi, $sayfaBasinaGosterilecekKayitSayisi");
                     $siparisNumaralariSorgusu->execute([$kullaniciId]);

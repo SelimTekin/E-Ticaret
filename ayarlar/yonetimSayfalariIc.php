@@ -106,6 +106,17 @@ $sayfaIc[102] = "urunlerGuncelleSonucHata.php";
 $sayfaIc[103] = "urunlerSilSonuc.php";
 $sayfaIc[104] = "urunlerSilSonucTamam.php";
 $sayfaIc[105] = "urunlerSilSonucHata.php";
-$sayfaIc[106] = ".php";
+$sayfaIc[106] = "siparisler.php";
+$sayfaIc[107] = "siparisDetay.php";
+$sayfaIc[108] = "siparislerTamamlanan.php";
+$sayfaIc[109] = "siparislerTamamlananDetay.php";
+$sayfaIc[110] = "siparisKargoKoduGirisSonuc.php";
+$sayfaIc[111] = "siparisKargoKoduGirisSonucTamam.php";
+$sayfaIc[112] = "siparisKargoKoduGirisSonucHata.php";
+$sayfaIc[113] = "siparisSilSonuc.php";
+$sayfaIc[114] = "siparisSilSonucTamam.php";
+$sayfaIc[115] = "siparisSilSonucHata.php";
+$sayfaIc[116] = ".php";
+$sayfaIc[117] = ".php";
 
 ?>

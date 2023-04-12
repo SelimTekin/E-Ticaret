@@ -1,0 +1,15 @@
+RewriteEngine On
+
+RewriteRule ^uye-giris$ index.php?sayfaKodu=31 [L,NC]
+RewriteRule ^yeni-uye-kayit$ index.php?sayfaKodu=22 [L,NC]
+RewriteRule ^hakkimizda$ index.php?sayfaKodu=1 [L,NC]
+
+RewriteRule ^anasayfa$ index.php [L,NC]
+RewriteRule ^anasayfa$ index.php?sayfaKodu=0 [L,NC]
+
+RewriteRule ^erkek-ayakkabilari$ index.php?sayfaKodu=84 [L,NC]
+RewriteRule ^kadin-ayakkabilari$ index.php?sayfaKodu=85 [L,NC]
+RewriteRule ^cocuk-ayakkabilari$ index.php?sayfaKodu=86 [L,NC]
+RewriteRule ^alisveris-sepeti$ index.php?sayfaKodu=94 [L,NC]
+
+RewriteRule ^urun-detay/(.*)/(.*)$ index.php?sayfaKodu=83&id=$2 [L,NC]

@@ -103,4 +103,17 @@ function resimAdiOlustur(){
     return $sonuc;
 }
 
+function SEO($deger){
+    $icerik       = trim($deger);
+    $degisecekler = array("ç", "Ç", "ğ", "Ğ", "ı", "İ", "ö", "Ö", "ş", "Ş", "ü", "Ü");
+    $degisenler   = array("c", "c", "g", "g", "i", "i", "o", "o", "s", "s", "u", "u");
+    $icerik       = str_replace($degisecekler, $degisenler, $icerik);
+    $icerik       = mb_strtolower($icerik, "UTF-8");
+    $icerik       = preg_replace("/[^a-z0-9.]/", "-", $icerik);
+    $icerik       = preg_replace("/-+/", "-", $icerik);
+    $icerik       = trim($icerik, "-");
+
+    return $icerik;
+}
+
 ?>

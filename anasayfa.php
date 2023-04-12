@@ -91,21 +91,21 @@
                         <td width="205" valign="top">
                             <table width="205" align="left" border="0" cellpadding="0" cellspacing="0" style="margin-bottom: 10px;"> <!-- style="border: 1px solid #CCC; margin-bottom: 10px;" -->
                                 <tr height="40">
-                                    <td align="center"><a href="index.php?sayfaKodu=83&id=<?php echo donusumleriGeriDondur($enYeniUrunSatirlari["id"]); ?>"><img src="resimler/urunResimleri/<?php echo $enYeniUrunResmiKlasoru; ?>/<?php echo donusumleriGeriDondur($enYeniUrunSatirlari["urunResmiBir"]); ?>" alt="Ürün Resmi" border="0" width="185" height="247"></a></td>
+                                    <td align="center"><a href="urun-detay/<?php echo SEO(donusumleriGeriDondur($enYeniUrunSatirlari["urunAdi"])); ?>/<?php echo donusumleriGeriDondur($enYeniUrunSatirlari["id"]); ?>"><img src="resimler/urunResimleri/<?php echo $enYeniUrunResmiKlasoru; ?>/<?php echo donusumleriGeriDondur($enYeniUrunSatirlari["urunResmiBir"]); ?>" alt="Ürün Resmi" border="0" width="185" height="247"></a></td>
                                 </tr>
                                 <tr height="25">
-                                    <td width="253" align="center"><a href="index.php?sayfaKodu=83&id=<?php echo donusumleriGeriDondur($enYeniUrunSatirlari["id"]); ?>" style="color: #FF9900; font-weight: bold; text-decoration: none;"><?php echo donusumleriGeriDondur($enYeniUrununTuru); ?></a></td>
+                                    <td width="253" align="center"><a href="urun-detay/<?php echo SEO(donusumleriGeriDondur($enYeniUrunSatirlari["urunAdi"])); ?>/<?php echo donusumleriGeriDondur($enYeniUrunSatirlari["id"]); ?>" style="color: #FF9900; font-weight: bold; text-decoration: none;"><?php echo donusumleriGeriDondur($enYeniUrununTuru); ?></a></td>
                                 </tr>
                                 <tr height="25">
-                                    <td width="253" align="center"><a href="index.php?sayfaKodu=83&id=<?php echo donusumleriGeriDondur($enYeniUrunSatirlari["id"]); ?>" style="color: #646464; font-weight: bold; text-decoration: none;">
+                                    <td width="253" align="center"><a href="urun-detay/<?php echo SEO(donusumleriGeriDondur($enYeniUrunSatirlari["urunAdi"])); ?>/<?php echo donusumleriGeriDondur($enYeniUrunSatirlari["id"]); ?>" style="color: #646464; font-weight: bold; text-decoration: none;">
                                             <div style="width: 205px; max-width: 205px; height: 20px; overflow: hidden; line-height: 20px;"><?php echo donusumleriGeriDondur($enYeniUrunSatirlari["urunAdi"]); ?></div>
                                         </a></td>
                                 </tr>
                                 <tr height="25">
-                                    <td width="253" align="center"><a href="index.php?sayfaKodu=83&id=<?php echo donusumleriGeriDondur($enYeniUrunSatirlari["id"]); ?>"><img src="resimler/<?php echo donusumleriGeriDondur($enYeniPuanResmi); ?>" alt="Ürün Puanı"></a></td>
+                                    <td width="253" align="center"><a href="urun-detay/<?php echo SEO(donusumleriGeriDondur($enYeniUrunSatirlari["urunAdi"])); ?>/<?php echo donusumleriGeriDondur($enYeniUrunSatirlari["id"]); ?>"><img src="resimler/<?php echo donusumleriGeriDondur($enYeniPuanResmi); ?>" alt="Ürün Puanı"></a></td>
                                 </tr>
                                 <tr height="25">
-                                    <td width="253" align="center"><a href="index.php?sayfaKodu=83&id=<?php echo donusumleriGeriDondur($urun["id"]); ?>" style="color: #0000FF; font-weight: bold; text-decoration: none;"><?php echo fiyatBicimlendir($enYeniUrunFiyatiHesapla); ?> TL</a></td>
+                                    <td width="253" align="center"><a href="urun-detay/<?php echo SEO(donusumleriGeriDondur($enYeniUrunSatirlari["urunAdi"])); ?>/<?php echo donusumleriGeriDondur($enYeniUrunSatirlari["id"]); ?>" style="color: #0000FF; font-weight: bold; text-decoration: none;"><?php echo fiyatBicimlendir($enYeniUrunFiyatiHesapla); ?> TL</a></td>
                                 </tr>
                             </table>
                         </td>
@@ -194,21 +194,21 @@
                         <td width="205" valign="top">
                             <table width="205" align="left" border="0" cellpadding="0" cellspacing="0" style="margin-bottom: 10px;"> <!-- style="border: 1px solid #CCC; margin-bottom: 10px;" -->
                                 <tr height="40">
-                                    <td align="center"><a href="index.php?sayfaKodu=83&id=<?php echo donusumleriGeriDondur($enPopulerUrunSatirlari["id"]); ?>"><img src="resimler/urunResimleri/<?php echo $enPopulerUrunResmiKlasoru; ?>/<?php echo donusumleriGeriDondur($enPopulerUrunSatirlari["urunResmiBir"]); ?>" alt="Ürün Resmi" border="0" width="185" height="247"></a></td>
+                                    <td align="center"><a href="urun-detay/<?php echo SEO(donusumleriGeriDondur($enPopulerUrunSatirlari["urunAdi"])); ?>/<?php echo donusumleriGeriDondur($enPopulerUrunSatirlari["id"]); ?>"><img src="resimler/urunResimleri/<?php echo $enPopulerUrunResmiKlasoru; ?>/<?php echo donusumleriGeriDondur($enPopulerUrunSatirlari["urunResmiBir"]); ?>" alt="Ürün Resmi" border="0" width="185" height="247"></a></td>
                                 </tr>
                                 <tr height="25">
-                                    <td width="253" align="center"><a href="index.php?sayfaKodu=83&id=<?php echo donusumleriGeriDondur($enPopulerUrunSatirlari["id"]); ?>" style="color: #FF9900; font-weight: bold; text-decoration: none;"><?php echo donusumleriGeriDondur($enPopulerUrununTuru); ?></a></td>
+                                    <td width="253" align="center"><a href="urun-detay/<?php echo SEO(donusumleriGeriDondur($enPopulerUrunSatirlari["urunAdi"])); ?>/<?php echo donusumleriGeriDondur($enPopulerUrunSatirlari["id"]); ?>" style="color: #FF9900; font-weight: bold; text-decoration: none;"><?php echo donusumleriGeriDondur($enPopulerUrununTuru); ?></a></td>
                                 </tr>
                                 <tr height="25">
-                                    <td width="253" align="center"><a href="index.php?sayfaKodu=83&id=<?php echo donusumleriGeriDondur($enPopulerUrunSatirlari["id"]); ?>" style="color: #646464; font-weight: bold; text-decoration: none;">
+                                    <td width="253" align="center"><a href="urun-detay/<?php echo SEO(donusumleriGeriDondur($enPopulerUrunSatirlari["urunAdi"])); ?>/<?php echo donusumleriGeriDondur($enPopulerUrunSatirlari["id"]); ?>" style="color: #646464; font-weight: bold; text-decoration: none;">
                                             <div style="width: 205px; max-width: 205px; height: 20px; overflow: hidden; line-height: 20px;"><?php echo donusumleriGeriDondur($enPopulerUrunSatirlari["urunAdi"]); ?></div>
                                         </a></td>
                                 </tr>
                                 <tr height="25">
-                                    <td width="253" align="center"><a href="index.php?sayfaKodu=83&id=<?php echo donusumleriGeriDondur($enPopulerUrunSatirlari["id"]); ?>"><img src="resimler/<?php echo donusumleriGeriDondur($enPopulerPuanResmi); ?>" alt="Ürün Puanı"></a></td>
+                                    <td width="253" align="center"><a href="urun-detay/<?php echo SEO(donusumleriGeriDondur($enPopulerUrunSatirlari["urunAdi"])); ?>/<?php echo donusumleriGeriDondur($enPopulerUrunSatirlari["id"]); ?>"><img src="resimler/<?php echo donusumleriGeriDondur($enPopulerPuanResmi); ?>" alt="Ürün Puanı"></a></td>
                                 </tr>
                                 <tr height="25">
-                                    <td width="253" align="center"><a href="index.php?sayfaKodu=83&id=<?php echo donusumleriGeriDondur($urun["id"]); ?>" style="color: #0000FF; font-weight: bold; text-decoration: none;"><?php echo fiyatBicimlendir($enPopulerUrunFiyatiHesapla); ?> TL</a></td>
+                                    <td width="253" align="center"><a href="urun-detay/<?php echo SEO(donusumleriGeriDondur($enPopulerUrunSatirlari["urunAdi"])); ?>/<?php echo donusumleriGeriDondur($enPopulerUrunSatirlari["id"]); ?>" style="color: #0000FF; font-weight: bold; text-decoration: none;"><?php echo fiyatBicimlendir($enPopulerUrunFiyatiHesapla); ?> TL</a></td>
                                 </tr>
                             </table>
                         </td>
@@ -297,21 +297,21 @@
                         <td width="205" valign="top">
                             <table width="205" align="left" border="0" cellpadding="0" cellspacing="0" style="margin-bottom: 10px;"> <!-- style="border: 1px solid #CCC; margin-bottom: 10px;" -->
                                 <tr height="40">
-                                    <td align="center"><a href="index.php?sayfaKodu=83&id=<?php echo donusumleriGeriDondur($enCokSatanUrunSatirlari["id"]); ?>"><img src="resimler/urunResimleri/<?php echo $enCokSatanUrunResmiKlasoru; ?>/<?php echo donusumleriGeriDondur($enCokSatanUrunSatirlari["urunResmiBir"]); ?>" alt="Ürün Resmi" border="0" width="185" height="247"></a></td>
+                                    <td align="center"><a href="urun-detay/<?php echo SEO(donusumleriGeriDondur($enCokSatanUrunSatirlari["urunAdi"])); ?>/<?php echo donusumleriGeriDondur($enCokSatanUrunSatirlari["id"]); ?>"><img src="resimler/urunResimleri/<?php echo $enCokSatanUrunResmiKlasoru; ?>/<?php echo donusumleriGeriDondur($enCokSatanUrunSatirlari["urunResmiBir"]); ?>" alt="Ürün Resmi" border="0" width="185" height="247"></a></td>
                                 </tr>
                                 <tr height="25">
-                                    <td width="253" align="center"><a href="index.php?sayfaKodu=83&id=<?php echo donusumleriGeriDondur($enCokSatanUrunSatirlari["id"]); ?>" style="color: #FF9900; font-weight: bold; text-decoration: none;"><?php echo donusumleriGeriDondur($enCokSatanUrununTuru); ?></a></td>
+                                    <td width="253" align="center"><a href="urun-detay/<?php echo SEO(donusumleriGeriDondur($enCokSatanUrunSatirlari["urunAdi"])); ?>/<?php echo donusumleriGeriDondur($enCokSatanUrunSatirlari["id"]); ?>" style="color: #FF9900; font-weight: bold; text-decoration: none;"><?php echo donusumleriGeriDondur($enCokSatanUrununTuru); ?></a></td>
                                 </tr>
                                 <tr height="25">
-                                    <td width="253" align="center"><a href="index.php?sayfaKodu=83&id=<?php echo donusumleriGeriDondur($enCokSatanUrunSatirlari["id"]); ?>" style="color: #646464; font-weight: bold; text-decoration: none;">
+                                    <td width="253" align="center"><a href="urun-detay/<?php echo SEO(donusumleriGeriDondur($enCokSatanUrunSatirlari["urunAdi"])); ?>/<?php echo donusumleriGeriDondur($enCokSatanUrunSatirlari["id"]); ?>" style="color: #646464; font-weight: bold; text-decoration: none;">
                                             <div style="width: 205px; max-width: 205px; height: 20px; overflow: hidden; line-height: 20px;"><?php echo donusumleriGeriDondur($enCokSatanUrunSatirlari["urunAdi"]); ?></div>
                                         </a></td>
                                 </tr>
                                 <tr height="25">
-                                    <td width="253" align="center"><a href="index.php?sayfaKodu=83&id=<?php echo donusumleriGeriDondur($enCokSatanUrunSatirlari["id"]); ?>"><img src="resimler/<?php echo donusumleriGeriDondur($enCokSatanPuanResmi); ?>" alt="Ürün Puanı"></a></td>
+                                    <td width="253" align="center"><a href="urun-detay/<?php echo SEO(donusumleriGeriDondur($enCokSatanUrunSatirlari["urunAdi"])); ?>/<?php echo donusumleriGeriDondur($enCokSatanUrunSatirlari["id"]); ?>"><img src="resimler/<?php echo donusumleriGeriDondur($enCokSatanPuanResmi); ?>" alt="Ürün Puanı"></a></td>
                                 </tr>
                                 <tr height="25">
-                                    <td width="253" align="center"><a href="index.php?sayfaKodu=83&id=<?php echo donusumleriGeriDondur($urun["id"]); ?>" style="color: #0000FF; font-weight: bold; text-decoration: none;"><?php echo fiyatBicimlendir($enCokSatanUrunFiyatiHesapla); ?> TL</a></td>
+                                    <td width="253" align="center"><a href="urun-detay/<?php echo SEO(donusumleriGeriDondur($enCokSatanUrunSatirlari["urunAdi"])); ?>/<?php echo donusumleriGeriDondur($enCokSatanUrunSatirlari["id"]); ?>" style="color: #0000FF; font-weight: bold; text-decoration: none;"><?php echo fiyatBicimlendir($enCokSatanUrunFiyatiHesapla); ?> TL</a></td>
                                 </tr>
                             </table>
                         </td>

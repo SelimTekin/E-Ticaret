@@ -34,6 +34,7 @@ else{
     <meta name="googlebot" content="index, follow"> <!-- ikisi aynı -->
     <meta name="revisit-after" content="7 Days"> <!-- Arama motoru bu siteyi bir daha ne zaman ziyaret etsin. 7 gün yaptık. İçerik sürekli değişmiyorsa arama motorunu her gün çağırmak sitemize eksi değer verir -->
     <title><?php echo donusumleriGeriDondur($siteTitle); ?></title>
+    <!-- <base href="/E-Ticaret/"> (LOCALDE BUNU KULLAN SİTEYE YÜKLERKEN ZATEN KLASÖRLE ATMAYACAKSIN)Sitedeki bütün css, javascript, resimler, videolar, müzikler... TÜM DOSYALAR E-TİCARET KLASÖRÜ İÇİNDE DEMEKTİR. SEO YAPISINDA LİNK DEĞİŞTİĞİ İÇİN SIKINTI OLUYOR. BASE'LER BU KLASÖR ALTINDA BULUNUYOR DEMİŞ OLDUK -->
     <link type="image/png" rel="icon" href="resimler/logo.png">
     <meta name="description" content="<?php echo donusumleriGeriDondur($siteDescription) ?>">
     <meta name="keywords" content="<?php echo donusumleriGeriDondur($siteKeywords) ?>">
@@ -63,28 +64,28 @@ else{
                         }
                         else{
                         ?>
-                        <td width="20"><a href="index.php?sayfaKodu=31"><img src="resimler/KullaniciBeyaz16x16.png" alt="sepet" border="0" style="margin-top: 5px;"></a></td>
-                        <td width="70" class="maviAlanMenusu"><a href="index.php?sayfaKodu=31">Giriş Yap</a></td>
-                        <td width="20"><a href="index.php?sayfaKodu=22"><img src="resimler/KullaniciEkleBeyaz16x16.png" alt="sepet" border="0" style="margin-top: 5px;"></a></td>
-                        <td width="85" class="maviAlanMenusu"><a href="index.php?sayfaKodu=22">Yeni Üye Ol</a></td>
+                        <td width="20"><a href="uye-giris"><img src="resimler/KullaniciBeyaz16x16.png" alt="sepet" border="0" style="margin-top: 5px;"></a></td>
+                        <td width="70" class="maviAlanMenusu"><a href="uye-giris">Giriş Yap</a></td>
+                        <td width="20"><a href="yeni-uye-kayit"><img src="resimler/KullaniciEkleBeyaz16x16.png" alt="sepet" border="0" style="margin-top: 5px;"></a></td>
+                        <td width="85" class="maviAlanMenusu"><a href="yeni-uye-kayit">Yeni Üye Ol</a></td>
                         <?php
                         }
                         ?>
-                        <td width="20"><?php if(isset($_SESSION["kullanici"])){ ?><a href="index.php?sayfaKodu=94"><img src="resimler/SepetBeyaz16x16.png" alt="sepet" border="0" style="margin-top: 5px;"></a><?php }else{ ?><a href="index.php?sayfaKodu=31"><img src="resimler/SepetBeyaz16x16.png" alt="sepet" border="0" style="margin-top: 5px;"></a><?php } ?></td>
-                        <td width="103" class="maviAlanMenusu"><?php if(isset($_SESSION["kullanici"])){ ?><a href="index.php?sayfaKodu=94">Alışveriş Sepeti</a><?php }else{ ?><a href="index.php?sayfaKodu=31">Alışveriş Sepeti</a><?php } ?></td>
+                        <td width="20"><?php if(isset($_SESSION["kullanici"])){ ?><a href="index.php?sayfaKodu=94"><img src="resimler/SepetBeyaz16x16.png" alt="sepet" border="0" style="margin-top: 5px;"></a><?php }else{ ?><a href="uye-giris"><img src="resimler/SepetBeyaz16x16.png" alt="sepet" border="0" style="margin-top: 5px;"></a><?php } ?></td>
+                        <td width="103" class="maviAlanMenusu"><?php if(isset($_SESSION["kullanici"])){ ?><a href="alisveris-sepeti">Alışveriş Sepeti</a><?php }else{ ?><a href="uye-giris">Alışveriş Sepeti</a><?php } ?></td>
                     </tr>
                 </table>
                 <table width="1065" height="80" align="center" border="0" cellpadding="0" cellspacing="0">
                     <tr>
-                        <td width="360"><a href="index.php"><img src="resimler/<?php echo donusumleriGeriDondur($siteLogosu); ?>" alt="logo"></a></td>
+                        <td width="360"><a href="anasayfa"><img src="resimler/<?php echo donusumleriGeriDondur($siteLogosu); ?>" alt="logo"></a></td>
                         <td>
                             <table width="915" height="30" align="center" border="0" cellpadding="0" cellspacing="0">
                                 <tr>
                                     <td width="474" class="anaMenu">&nbsp;</td>
-                                    <td width="95" class="anaMenu"><a href="index.php?sayfaKodu=0">Ana Sayfa</a></td>
-                                    <td width="148" class="anaMenu"><a href="index.php?sayfaKodu=84">Erkek Ayakkabıları</a></td>
-                                    <td width="148" class="anaMenu"><a href="index.php?sayfaKodu=85">Kadın Ayakkabıları</a></td>
-                                    <td width="145" class="anaMenu"><a href="index.php?sayfaKodu=86">Çocuk Ayakkabıları</a></td>
+                                    <td width="95" class="anaMenu"><a href="anasayfa">Ana Sayfa</a></td>
+                                    <td width="148" class="anaMenu"><a href="erkek-ayakkabilari">Erkek Ayakkabıları</a></td>
+                                    <td width="148" class="anaMenu"><a href="kadin-ayakkabilari">Kadın Ayakkabıları</a></td>
+                                    <td width="145" class="anaMenu"><a href="cocuk-ayakkabilari">Çocuk Ayakkabıları</a></td>
                                 </tr>
                             </table>
                         </td>
@@ -127,7 +128,7 @@ else{
                         <td width="250" style="border-bottom: 1px dashed #CCC;"><b>Bizi Takip Edin</b></td>
                     </tr>
                     <tr height="30">
-                        <td class="altMenu">&nbsp;<a href="index.php?sayfaKodu=1">Hakkımızda</a></td>
+                        <td class="altMenu">&nbsp;<a href="hakkimizda">Hakkımızda</a></td>
                         <td>&nbsp;</td>
                         <?php
                         if(isset($_SESSION["kullanici"])){
@@ -137,7 +138,7 @@ else{
                         }
                         else{
                         ?>
-                        <td class="altMenu"><a href="index.php?sayfaKodu=31">Giriş Yap</a></td>
+                        <td class="altMenu"><a href="uye-giris">Giriş Yap</a></td>
                         <?php
                         }
                         ?>
@@ -164,7 +165,7 @@ else{
                         }
                         else{
                         ?>
-                        <td class="altMenu"><a href="index.php?sayfaKodu=22">Yeni Üye Ol</a></td>
+                        <td class="altMenu"><a href="yeni-uye-kayit">Yeni Üye Ol</a></td>
                         <?php
                         }
                         ?>
